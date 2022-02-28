@@ -1,0 +1,127 @@
+[
+	{
+		"description": "2021/9/18 14:21:53",
+
+		"register": 1,
+		"quantity": 1,
+		"signals": "Node flash test (Page 140)",
+		"functioncode": 6,
+		"flash": [
+			0
+		]
+	},
+	{
+		"register": 194,
+		"quantity": 32,
+		"signals": "I&M0 - device identification(3RW5 communication module) (Page 141)",
+		"functioncode": 3
+	},
+	{
+		"register": 386,
+		"quantity": 32,
+		"signals": "385 - 416 I&M0 - device identification (3RW5 soft starter)",
+		"functioncode": 3
+	},
+	{
+		"register": 418,
+		"quantity": 32,
+		"signals": "417 - 448 I&M1 - equipment identifier (3RW5 soft Starter)",
+		"functioncode": 3
+	},
+	{
+		"register": 450,
+		"quantity": 32,
+		"signals": "449 - 480 I&M2 - installation (3RW5 soft starter)",
+		"functioncode": 3
+	},
+	{
+		"register": 482,
+		"quantity": 32,
+		"signals": "481 - 512 I&M3 - description (3RW5 soft starter)",
+		"functioncode": 3
+	},
+	{
+		"register": 578,
+		"quantity": 32,
+		"signals": "577 - 608 I&M0 - device identification (3RW5 HMI High Feature)",
+		"functioncode": 3
+	},
+	{
+		"register": 2498,
+		"quantity": 8,
+		"signals": "2497 - 2498 Phase current I L1 (rms)",
+		"functioncode": 3
+	},
+	{
+		"register": 2632,
+		"quantity": 28,
+		"signals": "2631 - 2632 Active power 2 registers",
+		"functioncode": 3
+	},
+	{
+		"register": 32769,
+		"quantity": 8,
+		"signals": "32768 - 32775 Process image input (PII)",
+		"functioncode": 3
+	},
+	{
+		"register": 33281,
+		"quantity": 2,
+		"signals": "33280 - 33281 Process image output (PIQ)",
+		"functioncode": 3
+	},
+	{
+		"register": 33793,
+		"quantity": 42,
+		"signals": "33792 - 33833 Soft starter diagnostics (Page 152)",
+		"functioncode": 3
+	},
+	{
+		"register": 34817,
+		"quantity": 45,
+		"signals": "34816 - 34860 Measured values",
+		"functioncode": 3
+	},
+	{
+		"register": 35841,
+		"quantity": 95,
+		"signals": "35840 - 35934 Statistic data",
+		"functioncode": 3
+	},
+	{
+		"register": 36865,
+		"quantity": 58,
+		"signals": "36864 - 36921 Maximum pointer ",
+		"functioncode": 3
+	},
+	{
+		"register": 37889,
+		"quantity": 95,
+		"signals": "37888 - 37982 Parameters (Page 164)",
+		"functioncode": 3
+	},
+	{
+		"register": 41217,
+		"quantity": 23,
+		"signals": "41216 - 41238 Communication parameters Modbus TCP (Page 176)",
+		"functioncode": 3
+	},
+	{
+		"register": 41473,
+		"quantity": 10,
+		"signals": "41472 - 41481 Modbus RTU communication parameters ",
+		"functioncode": 3
+	},
+	{
+		"register": 45057,
+		"quantity": 9,
+		"signals": "45056 - 45064 HMI diagnostics ",
+		"functioncode": 3
+	},
+	{
+		"register": 45313,
+		"quantity": 7,
+		"signals": "45312 - 45318 HMI parameters (Page 180)",
+		"functioncode": 3
+	}
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "desc": "demo-project",
+        "ip": "192.168.2.135",
+        "port": 502,
+        "subordinatorNumber": 127,
+        "model": "3wl",
+        "protocol": "MODBUS-TCP",
+        "online": false,
+        "timeoutMillisecond": 3000,
+        "register": 24070,
+        "quantity": 110,
+        "signals": "ADIO-TEST",
+        "functioncode": 3,
+        "flash": [65534, 65533]
+    },
+    {
+        "desc": "3va2, com800",
+        "ip": "192.168.2.20",
+        "port": 502,
+        "subordinatorNumber": 127,
+        "model": "Unknown-Device",
+        "protocol": "MODBUS-TCP",
+        "online": false,
+        "timeoutMillisecond": 3000,
+        "register": 1,
+        "quantity": 100,
+        "signals": "ADIO-TEST",
+        "functioncode": 3,
+        "flash": [65534, 65533]
+    },
+    {
+        "desc": "Unknown-Device",
+        "ip": "192.168.2.32",
+        "port": 502,
+        "subordinatorNumber": 127,
+        "model": "Unknown-Device",
+        "protocol": "MODBUS-TCP",
+        "online": false,
+        "timeoutMillisecond": 3000,
+        "register": 1,
+        "quantity": 120,
+        "signals": "ADIO-TEST",
+        "functioncode": 3,
+        "flash": [65534, 65533]
+    }
+]

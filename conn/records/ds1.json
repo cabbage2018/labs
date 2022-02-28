@@ -1,0 +1,843 @@
+{
+	"gatewayId": "908765334",
+	"uploadCycle": "180",
+	"configurationId": "{{Unique_ID}}",
+	"dataSources": [
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3VA2",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.100",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3VA2",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 226,
+					"quantity": 7
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3VA2",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.100",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3VA2",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 218,
+					"quantity": 6
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3VA2",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.100",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3VA2",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 140
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 8,
+					"address": 401,
+					"quantity": 99
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 8,
+					"address": 1,
+					"quantity": 141
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 2,
+					"slaveNumber": 7,
+					"address": 37054,
+					"quantity": 6
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 6,
+					"address": 301,
+					"quantity": 50
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 5,
+					"address": 1201,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 4,
+					"address": 1101,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 3,
+					"address": 1001,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 2,
+					"address": 801,
+					"quantity": 49
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.52",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM5200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 201,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 34194,
+					"quantity": 258
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 34019,
+					"quantity": 176
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 33795,
+					"quantity": 198
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 35843,
+					"quantity": 62
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 2497,
+					"quantity": 162
+				}
+			]
+		},
+		{
+			"name": "SIRIUS",
+			"description": "SIRIUS",
+			"machineModel": "SIE3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.99",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 34817,
+					"quantity": 38
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.32",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3200",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.32",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 801,
+					"quantity": 40
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.32",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM4200",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 9001,
+					"quantity": 96
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 261,
+					"quantity": 12
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 801,
+					"quantity": 40
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3100",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3100",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3100",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3100",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 24123,
+					"quantity": 4
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3100",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3100",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 120
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3WL",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 23297,
+					"quantity": 14
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3WL",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 23565,
+					"quantity": 1
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3WL",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 1
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE3WL",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.42",
+				"port": 17003
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE3WL",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 24070,
+					"quantity": 63
+				}
+			]
+		},
+		{
+			"name": "SENTRON",
+			"description": "SENTRON",
+			"machineModel": "SIE7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.32",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7KM3200",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "SIPROTEC",
+			"description": "SIPROTEC",
+			"machineModel": "SIE7SJ686",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.86",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7SJ686",
+					"functionType": 2,
+					"slaveNumber": 90,
+					"address": 10348,
+					"quantity": 63
+				}
+			]
+		},
+		{
+			"name": "SIPROTEC",
+			"description": "SIPROTEC",
+			"machineModel": "SIE7SJ686",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.86",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7SJ686",
+					"functionType": 4,
+					"slaveNumber": 90,
+					"address": 30000,
+					"quantity": 14
+				}
+			]
+		},
+		{
+			"name": "SIPROTEC",
+			"description": "SIPROTEC",
+			"machineModel": "SIE7SJ686",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.86",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7SJ686",
+					"functionType": 3,
+					"slaveNumber": 90,
+					"address": 40415,
+					"quantity": 26
+				}
+			]
+		},
+		{
+			"name": "SIPROTEC",
+			"description": "SIPROTEC",
+			"machineModel": "SIE7SJ686",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 30,
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "192.168.2.86",
+				"port": 502
+			},
+			"spaces": [
+				{
+					"description ": "TCP",
+					"decoderlink": "SIE7SJ686",
+					"functionType": 3,
+					"slaveNumber": 90,
+					"address": 40200,
+					"quantity": 4
+				}
+			]
+		}
+	]
+}

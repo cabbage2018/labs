@@ -1,0 +1,432 @@
+{
+	"machineModel": "simacdev3WL",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-RTU",
+	"dataPoints": [
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ENERGY_6",
+			"name": "Tre1",
+			"description": "Reactive energy in reversedirection（kWh）",
+			"description2": "反向无功电度（kwh）",
+			"dataType": "INT",
+			"unit": "kvarh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24129,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ENERGY_5",
+			"name": "Tri1",
+			"description": "Reactive energy in normaldirection（kWh）",
+			"description2": "正向无功电度（kwh）",
+			"dataType": "INT",
+			"unit": "kvarh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24127,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ENERGY_4",
+			"name": "Tae1",
+			"description": "Active energy in reversedirection（kWh）",
+			"description2": "反向有功电度（kwh）",
+			"dataType": "INT",
+			"unit": "kWh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24125,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ENERGY_3",
+			"name": "Tai1",
+			"description": "Active energy in normaldirection（kWh）",
+			"description2": "正向有功电度（kwh）",
+			"dataType": "INT",
+			"unit": "kWh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24123,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ELECTRICITY_10",
+			"name": "Vca",
+			"description": "Phase-to-phase voltage between phase L3 and L1",
+			"description2": "线电压UCA",
+			"dataType": "INT",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24079,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ELECTRICITY_9",
+			"name": "Vbc",
+			"description": "Phase-to-phase voltage between phase L2 and L3",
+			"description2": "线电压UBC",
+			"dataType": "INT",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24078,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.ELECTRICITY_8",
+			"name": "Vab",
+			"description": "Phase-to-phase voltage between phase L1 and L2",
+			"description2": "线电压UAB",
+			"dataType": "INT",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24077,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_18",
+			"name": "fac3",
+			"description": "Power factor in phase L3",
+			"description2": "C相功率因数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24117,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_17",
+			"name": "fac2",
+			"description": "Power factor in phase L2",
+			"description2": "B相功率因数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24116,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_16",
+			"name": "fac1",
+			"description": "Power factor in phase L1",
+			"description2": "A相功率因数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24115,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_15",
+			"name": "fac",
+			"description": "Mean value of power factor",
+			"description2": "三相功率因数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24114,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_14",
+			"name": "S",
+			"description": "Total apparent power",
+			"description2": "三相视在功率",
+			"dataType": "INT",
+			"unit": "kVA",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24085,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_13",
+			"name": "Q",
+			"description": "Total reactive power",
+			"description2": "三相无功功率",
+			"dataType": "INT",
+			"unit": "kvar",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24090,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.POWER_12",
+			"name": "P",
+			"description": "Total active power",
+			"description2": "三相有功功率",
+			"dataType": "INT",
+			"unit": "kW",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24086,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.FREQUENCY_20",
+			"name": "fr",
+			"description": "Frequency",
+			"description2": "频率",
+			"dataType": "INT",
+			"unit": "Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24118,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_31",
+			"name": "DISCPOS",
+			"description": "Disconnected position",
+			"description2": "断路器位置",
+			"dataType": "INT",
+			"unit": "0/1",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 1,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_30",
+			"name": "SUMI2T",
+			"description": "Total of deactivated I²t values L1, L2, L3, N",
+			"description2": "Sum I^2 t 焦耳积分量",
+			"dataType": "INT",
+			"unit": "JJ",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23309,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_29",
+			"name": "TRIPNM",
+			"description": "Switching cycle counter (for switching cycle on/off)",
+			"description2": "Nm（不带载情况下的实际操作次数）",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23299,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_28",
+			"name": "TRIPNE",
+			"description": "Number of switching operations under load",
+			"description2": "Ne（带载情况下的实际操作次数）",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23297,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_27",
+			"name": "TCB",
+			"description": "Temperature in circuit breaker (measured in the BSS)",
+			"description2": "断路器室温度",
+			"dataType": "INT",
+			"unit": "8~15",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24123,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_26",
+			"name": "TCC",
+			"description": "Temperature in the control cabinet (measured in the COM16)",
+			"description2": "断路器控制隔室温度",
+			"dataType": "INT",
+			"unit": "0~7",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 24122,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_25",
+			"name": "TRIPG",
+			"description": "Number of ground-fault tripping operations (G)",
+			"description2": "接地故障动作次数",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23308,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_24",
+			"name": "TRIPL",
+			"description": "Number of overload trips (L)",
+			"description2": "过载保护动作次数",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23307,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_23",
+			"name": "TRIPS",
+			"description": "Number of short-circuit trips(SI)",
+			"description2": "短路速断动作次数",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23306,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3WL_MODBUS-RTU_.DIAGNOSTIC_22",
+			"name": "TRIP",
+			"description": "Number of switchingoperations caused by trips",
+			"description2": "脱扣次数",
+			"dataType": "INT",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 23298,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

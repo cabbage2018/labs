@@ -1,0 +1,61 @@
+{
+	"uploadCycle": "15",
+	"configurationId": "PAC4200",
+	"onlineLight": "grey",
+	"dataSources": [		
+		{
+			"name": "PAC4200.001",
+			"description": "",
+			"machineModel": "SENTRON7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 180,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "10.0.0.42",
+				"port": "502"
+			},
+			"spaces": [
+				{
+					"functionType": 3,
+					"slaveNumber": 247,
+					"address": 801,
+					"quantity": 40
+				},
+				{
+					"functionType": 3,
+					"slaveNumber": 126,
+					"address": 1,
+					"quantity": 80
+				}
+			]
+		},
+		{
+			"name": "PAC3200.001",
+			"description": "",
+			"machineModel": "SENTRON7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 180,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": "10.0.0.32",
+				"port": "502"
+			},
+			"spaces": [
+				{
+					"functionType": 3,
+					"slaveNumber": 247,
+					"address": 801,
+					"quantity": 40
+				},
+				{
+					"functionType": 3,
+					"slaveNumber": 126,
+					"address": 1,
+					"quantity": 60
+				}
+			]
+		}
+	]
+}

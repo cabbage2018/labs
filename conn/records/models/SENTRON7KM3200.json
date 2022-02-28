@@ -1,0 +1,415 @@
+{
+	"machineModel": "simacdevPAC3200",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-TCP",
+	"dataPoints": [
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ENERGY_7",
+			"name": "Tpe1",
+			"description": "Apparent Energy Tariff 1",
+			"description2": "视在电度费率1",
+			"dataType": "DOUBLE",
+			"unit": "Vah",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 833,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ENERGY_6",
+			"name": "Tre1",
+			"description": "Reactive Energy Export Tariff 1",
+			"description2": "送电无功电度费率1",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 825,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ENERGY_5",
+			"name": "Tri1",
+			"description": "Reactive Energy Import Tariff 1",
+			"description2": "受电无功电度费率1",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 817,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ENERGY_4",
+			"name": "Tae1",
+			"description": "Active Energy Export Tariff 1",
+			"description2": "送电有功电度费率1",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 809,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ENERGY_3",
+			"name": "Tai1",
+			"description": "Active Energy Import Tariff 1",
+			"description2": "受电有功电度费率1",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 801,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_14",
+			"name": "Cc",
+			"description": "Current c",
+			"description2": "C相电流",
+			"dataType": "DOUBLE",
+			"unit": "A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 17,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_13",
+			"name": "Cb",
+			"description": "Current b",
+			"description2": "B相电流",
+			"dataType": "DOUBLE",
+			"unit": "A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 15,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_12",
+			"name": "Ca",
+			"description": "Current a",
+			"description2": "A相电流",
+			"dataType": "DOUBLE",
+			"unit": "A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 13,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_11",
+			"name": "Vcn",
+			"description": "Voltage c-n",
+			"description2": "C相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 5,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_10",
+			"name": "Vbn",
+			"description": "Voltage b-n",
+			"description2": "B相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 3,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.ELECTRICITY_9",
+			"name": "Van",
+			"description": "Voltage a-n",
+			"description2": "A相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 1,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.FREQUENCY_16",
+			"name": "fr",
+			"description": "Frequency",
+			"description2": "频率",
+			"dataType": "DOUBLE",
+			"unit": "Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 55,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.POWER_21",
+			"name": "fac",
+			"description": "Total power factor",
+			"description2": "功率因数",
+			"dataType": "DOUBLE",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 69,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.POWER_20",
+			"name": "Q",
+			"description": "Total reactive power",
+			"description2": "三相无功功率",
+			"dataType": "DOUBLE",
+			"unit": "var",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 67,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.POWER_19",
+			"name": "P",
+			"description": "Total active power",
+			"description2": "三相有功功率",
+			"dataType": "DOUBLE",
+			"unit": "W",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 65,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.POWER_18",
+			"name": "S",
+			"description": "Total apparent power",
+			"description2": "三相视在功率",
+			"dataType": "DOUBLE",
+			"unit": "VA",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 63,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_28",
+			"name": "THDIc",
+			"description": "THD-R Current c",
+			"description2": "总谐波畸变率 Ic",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 53,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_27",
+			"name": "THDIb",
+			"description": "THD-R Current b",
+			"description2": "总谐波畸变率 Ib",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 51,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_26",
+			"name": "THDIa",
+			"description": "THD-R Current a",
+			"description2": "总谐波畸变率 Ia",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 49,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_25",
+			"name": "THDUc",
+			"description": "THD-R Voltage c",
+			"description2": "总谐波畸变率 Uc",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 47,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_24",
+			"name": "THDUb",
+			"description": "THD-R Voltage b",
+			"description2": "总谐波畸变率 Ub",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 45,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.THD_23",
+			"name": "THDUa",
+			"description": "THD-R Voltage a",
+			"description2": "总谐波畸变率 Ua",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 43,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.DIO_31",
+			"name": "SDI",
+			"description": "Status of the digital inputs",
+			"description2": "开关量输入1动作",
+			"dataType": "",
+			"unit": "Bit0",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 209,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM3200_MODBUS-TCP_.DIO_30",
+			"name": "DIO0",
+			"description": "Digital output 0",
+			"description2": "开关量输出1动作",
+			"dataType": "",
+			"unit": "Bit0",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 207,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

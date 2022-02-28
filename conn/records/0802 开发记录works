@@ -1,0 +1,359 @@
+
+      // client.connection.hub.on('norisHub', '/api/sr/notifySubscriptionStatus', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      // })
+
+      // client.connection.hub.on('norisHub', 'valuessubscriptions', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      // })
+
+      // client.connection.hub.on('norisHub', 'commandssubscriptions', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      // })
+
+
+      client.connection.hub.on('norisHub', '/api/sr/sytemsSubscriptions/channelize/', (message) => {
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+      })
+
+      client.connection.hub.on('norisHub', '/api/sr/systemssubscriptions/channelize/', (message) => {
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+      })
+
+      // client.connection.hub.on('norisHub', 'api/sr/eventcategorysoundssubscriptions', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      // })
+
+
+
+      client.connection.hub.on('/api/sr/eventssubscriptions/channelize/', 'notifyEvents', (message) => {
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+      })
+
+
+
+      // client.connection.hub.on('norisHub', '/api/sr/systembrowsersubscriptions', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      // })
+
+
+      // client.connection.hub.on('norisHub', '/api/sr/valuessubscriptions', (message) => {
+      //   console.log('------------------------------------------------------------->>>')
+      //   console.log('receive:', message)
+      //   done()
+      // })
+
+      client.connection.hub.on('valuesHub', '/api/sr/valuessubscriptions', (message) => {
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+        done()
+      })
+
+      client.connection.hub.on('/api/sr/valuessubscriptions/"System1:GmsDevice_1_7211_6"','valuesHub',  (message) => {
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+        done()
+      })
+
+      client.connection.hub.on('valuesHub', '/api/sr/valuessubscriptions/channelize/', (message) => {
+        // "System1:GmsDevice_1_7211_6"
+        console.log('------------------------------------------------------------->>>')
+        console.log('receive:', message)
+        done()
+      })
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    let client = new signalr.client(`https://desktop-eka5vdd:8443/api/sr/systemssubscriptions/channelize/${requestId}/${connectionId}`, ['norisHub'])
+    client.headers['Token'] ='JavaScript signalR Client Remote Intranet/Internet'
+    client.on('connected', () => {
+      console.log('SignalR client connected.')
+    })
+    client.on('reconnecting', (count) => {
+      console.log(`SignalR client reconnecting(${count}).`)
+    })
+    client.on('disconnected', (code) => {
+      console.log(`SignalR client disconnected(${code}).`)
+    })
+    client.on('error', (code, ex) => {
+      console.log(`SignalR client connect error: ${code}.`)
+    })
+    client.connection.hub.on('norisHub', 'getMessage', (message) => {
+      console.log('receive:', message)
+    })
+    client.connection.hub.call('norisHub', 'send', message).then((result) => {
+      console.log('success:', result)
+    }).catch((error) => {
+      console.log('error:', error)
+    })
+    client.connection.hub.invoke('norisHub', 'send', message)
+    client.start()
+    // client.end()
+
+
+
+[this method can show whether your server is running or firewalled]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS D:\git\finetune\megatron\megatron\fieldbridge> pkg app.js
+> pkg@5.3.1
+> Targets not specified. Assuming:
+  node10-linux-x64, node10-macos-x64, node10-win-x64
+> Fetching base Node.js binaries to PKG_CACHE_PATH
+  fetched-v10.24.1-linux-x64          [====================] 100%
+
+  fetched-v10.24.1-win-x64            [====================] 100%
+
+  fetched-v10.24.1-macos-x64          [====================] 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm ERR! error in C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\ejs: ENOENT: no such file or directory, open 'C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\ejs\package.json'
+npm ERR! error in C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\express-generator: ENOENT: no such file or directory, open 'C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\express-generator\package.json'
+npm ERR! error in C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\live-server: ENOENT: no such file or directory, open 'C:\Users\Z0040DNE\AppData\Roaming\npm\node_modules\live-server\package.json'
+PS D:\git\finetune\megatron\megatron> pkg ./package.json   
+> pkg@5.3.1
+> Fetching base Node.js binaries to PKG_CACHE_PATH
+  fetched-v10.24.1-win-arm64          [                    ] 0%
+> Error! 404: Not Found
+> Not found in remote cache:
+  {"tag":"v3.2","name":"node-v10.24.1-win-arm64"}
+> Building base binary from source:
+  built-v10.24.1-win-arm64
+> Cloning Node.js repository from GitHub...
+Cloning into bare repository 'node/.git'...
+remote: Enumerating objects: 31504, done.
+remote: Counting objects: 100% (31504/31504), done.
+remote: Compressing objects: 100% (24542/24542), done.
+remote: Total 31504 (delta 8000), reused 16296 (delta 5704), pack-reused 0
+Receiving objects: 100% (31504/31504), 61.45 MiB | 471.00 KiB/s, done.
+Resolving deltas: 100% (8000/8000), done.
+> Checking out v10.24.1
+Updating files: 100% (32358/32358), done.
+HEAD is now at 5182a7ec 2021-04-06, Version 10.24.1 'Dubnium' (LTS)
+> Applying patches
+> Compiling Node.js from sources...
+Looking for Python
+Python found in C:\Users\Z0040DNE\AppData\Local\Microsoft\WindowsApps\\python.exe
+WARNING: Python 3 is not yet fully supported, to avoid issues Python 2 should be installed.
+Cannot determine current version of Node.js
+> Error! Error: ENOENT: no such file or directory, open 'C:\Users\Z0040DNE\AppData\Local\Temp\pkg.611ab1eb44faad9e8eeb61dd\node\Release\node.exe'
+PS D:\git\finetune\megatron\megatron> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@BCsabaEngine
+BCsabaEngine commented on 9 Jul
+A reason of error is: linux systems contains (not every distro by default) a command called "patch", that can upgrade code files (cpp) about a diff file (patch). Windows systems does not contains these utility, so spawn('patch') failed.
+
+If you can leave without nodejs patches (bugfixes, etc.) you can run the compilation after modify file \node_modules\pkg\node_modules\pkg-fetch\lib-es5\build.js
+
+Change this line (169):
+
+return [4 /*yield*/, utils_1.spawn('patch', args, { cwd: nodePath, stdio: 'inherit' })];
+to this:
+
+return [4 /*yield*/, [2]];
+Or you can download a very old application from here: http://gnuwin32.sourceforge.net/packages/patch.htm that can run as a patch.exe (I have NOT tried it)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PS D:\git\finetune\megatron\megatron>
+PS D:\git\finetune\megatron\megatron> pkg ./package.json
+> pkg@5.3.1
+> Fetching base Node.js binaries to PKG_CACHE_PATH
+  fetched-v10.24.1-win-arm64          [                    ] 0%
+> Error! 404: Not Found
+> Not found in remote cache:
+  {"tag":"v3.2","name":"node-v10.24.1-win-arm64"}
+> Building base binary from source:
+  built-v10.24.1-win-arm64
+> Cloning Node.js repository from GitHub...
+Cloning into bare repository 'node/.git'...
+remote: Enumerating objects: 31504, done.
+remote: Counting objects: 100% (31504/31504), done.
+remote: Compressing objects: 100% (24542/24542), done.
+remote: Total 31504 (delta 8000), reused 16296 (delta 5704), pack-reused 0
+Receiving objects: 100% (31504/31504), 61.45 MiB | 377.00 KiB/s, done.
+Resolving deltas: 100% (8000/8000), done.
+> Checking out v10.24.1
+Updating files: 100% (32358/32358), done.
+HEAD is now at 5182a7ec 2021-04-06, Version 10.24.1 'Dubnium' (LTS)
+> Applying patches
+> Compiling Node.js from sources...
+Looking for Python
+Python 2 found in C:\Python27\\python.exe
+Looking for Visual Studio 2017
+Failed to find a suitable Visual Studio installation.
+Try to run in a "Developer Command Prompt" or consult
+https://github.com/nodejs/node/blob/master/BUILDING.md#windows-1
+> Error! Error: ENOENT: no such file or directory, open 'C:\Users\Z0040DNE\AppData\Local\Temp\pkg.368507deb2262d461aad7186\node\Release\node.exe'
+PS D:\git\finetune\megatron\megatron> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+      "node10-linux-x64",
+      "node12-macos-x64"
+	  
+	  
+	  

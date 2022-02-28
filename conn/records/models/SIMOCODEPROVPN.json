@@ -1,0 +1,475 @@
+{
+	"machineModel": "SIMOCODEPROVPN",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "OPC-UA",
+	"dataPoints": [
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_38",
+			"name": "numberofstarts2",
+			"description": "Number of starts",
+			"description2": "运行次数",
+			"dataType": "Unsigned Dword",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=89",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_37",
+			"name": "motorhours3",
+			"description": "Int. motor operating hours",
+			"description2": "总计电机运行时间",
+			"dataType": "Unsigned Dword",
+			"unit": "1 s",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=87",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_36",
+			"name": "motorhours2",
+			"description": "Motor operating hours",
+			"description2": "电机运行时间",
+			"dataType": "Unsigned Dword",
+			"unit": "1 s",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=86",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_35",
+			"name": "tripoverloadint",
+			"description": "Int. number of overload trips",
+			"description2": "总计过载脱扣次数",
+			"dataType": "Unsigned word",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=74",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_34",
+			"name": "tripoverload",
+			"description": "Number of overload trips",
+			"description2": "过载脱扣次数",
+			"dataType": "Unsigned word",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=73",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_33",
+			"name": "imax",
+			"description": "Max. current I_max",
+			"description2": "负载率",
+			"dataType": "Unsigned word",
+			"unit": "1 % / Is",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=33",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_32",
+			"name": "dryproerror",
+			"description": "Trip - Dry-running protection error",
+			"description2": "故障 - 泵干运行保护错误",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=347",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_31",
+			"name": "dryrunningpump",
+			"description": "Trip - Dry running pump",
+			"description2": "故障 - 泵干运行",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=346",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_30",
+			"name": "hardwarefault",
+			"description": "Trip - Hardware fault basic unit",
+			"description2": "故障 - 基本单元硬件故障",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=284",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_29",
+			"name": "motorstoptime",
+			"description": "Warning - Motor stop time >",
+			"description2": "警告 - 电机停止时间 >",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=267",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_28",
+			"name": "motorhours",
+			"description": "Warning - Motor operating hours >",
+			"description2": "警告 - 电机运转时间 >",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=266",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_27",
+			"name": "numberofstarts",
+			"description": "Warning - No. of starts>",
+			"description2": "警告 - 电机起动次数 >",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=264",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_26",
+			"name": "prmerror",
+			"description": "Event - Prm error number",
+			"description2": "事件 - 参数编号错误",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=220",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_25",
+			"name": "passwordactivated",
+			"description": "Event - Password protection active",
+			"description2": "事件 - 密码保护有效",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=217",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_24",
+			"name": "passworderror",
+			"description": "Event - Wrong password",
+			"description2": "事件 - 密码错误",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=216",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_23",
+			"name": "firmwareactive",
+			"description": "Event - Module-FW update active",
+			"description2": "事件 - 固件更新生效",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=191",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_22",
+			"name": "stopover",
+			"description": "Event - Motor stop time >",
+			"description2": "事件 - 电机停止时间 >",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=179",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_21",
+			"name": "runover",
+			"description": "Event - Motor operating hours >",
+			"description2": "事件 - 电机运转时间 >",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=178",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_20",
+			"name": "",
+			"description": "Status - On",
+			"description2": "",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=120",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_19",
+			"name": "forward",
+			"description": "Status - On",
+			"description2": "正转",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=119",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_18",
+			"name": "stop",
+			"description": "Status - Off",
+			"description2": "停止",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=118",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_17",
+			"name": "",
+			"description": "Status - On",
+			"description2": "",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=117",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_16",
+			"name": "reverse",
+			"description": "Status - On",
+			"description2": "反转",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=116",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_15",
+			"name": "warning",
+			"description": "Status - General warning",
+			"description2": "警告发生",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=109",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_14",
+			"name": "fault",
+			"description": "Status - General fault",
+			"description2": "故障发生",
+			"dataType": "Boolean",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=108",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_13",
+			"name": "tai1",
+			"description": "Consumed energy",
+			"description2": "能耗",
+			"dataType": "Unsigned Dword",
+			"unit": "1 kWh",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=92",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_12",
+			"name": "p",
+			"description": "Active power P",
+			"description2": "有功功率",
+			"dataType": "Float",
+			"unit": "1 W",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=69",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_11",
+			"name": "s",
+			"description": "Apparent power S",
+			"description2": "视在功率",
+			"dataType": "Unsigned Dword",
+			"unit": "1 VA",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=52",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_10",
+			"name": "p",
+			"description": "Active power P",
+			"description2": "有功功率",
+			"dataType": "Unsigned Dword",
+			"unit": "1 W",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=51",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_9",
+			"name": "cc",
+			"description": "Current I_L3",
+			"description2": "相电流IL3",
+			"dataType": "Float",
+			"unit": "1 A",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=68",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_8",
+			"name": "cb",
+			"description": "Current I_L2",
+			"description2": "相电流IL2",
+			"dataType": "Float",
+			"unit": "1 A",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=67",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_7",
+			"name": "ca",
+			"description": "Current I_L1",
+			"description2": "相电流IL1",
+			"dataType": "Float",
+			"unit": "1 A",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=66",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_6",
+			"name": "iavg",
+			"description": "Average current I_avg",
+			"description2": "平均电流",
+			"dataType": "Float",
+			"unit": "1 A",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=65",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_5",
+			"name": "imax",
+			"description": "Max. Current I_max",
+			"description2": "最大电流",
+			"dataType": "Float",
+			"unit": "1 A",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=64",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_4",
+			"name": "fr",
+			"description": "Frequency",
+			"description2": "电压频率",
+			"dataType": "Unsigned word",
+			"unit": "0.01 Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=63",
+				"onDataChanged": false
+			}
+		},
+		{
+			"dataPointId": "SIMOCODEPROVPN_OPC-UA_.MOTOR_3",
+			"name": "fac",
+			"description": "Cos phi",
+			"description2": "功率因数",
+			"dataType": "Unsigned byte",
+			"unit": "0.01",
+			"scaling": 1,
+			"dataPointData": {
+				"address": "ns=2;i=32",
+				"onDataChanged": false
+			}
+		}
+	]
+}

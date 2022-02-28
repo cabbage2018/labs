@@ -1,0 +1,466 @@
+{
+	"machineModel": "simacdev3VA2",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-TCP",
+	"dataPoints": [
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ENERGY_6",
+			"name": "Tre1",
+			"description": "Exported reactive energy",
+			"description2": "反向无功电度（kwh）",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 134,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ENERGY_5",
+			"name": "Tri1",
+			"description": "Imported reactive energy",
+			"description2": "正向无功电度（kwh）",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 130,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ENERGY_4",
+			"name": "Tae1",
+			"description": "Exported active energy",
+			"description2": "反向有功电度（kwh）",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 126,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ENERGY_3",
+			"name": "Tai1",
+			"description": "Imported active energy",
+			"description2": "正向有功电度（kwh）",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 122,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ELECTRICITY_10",
+			"name": "Vcn",
+			"description": "Voltage L3-L1",
+			"description2": "C相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 36,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ELECTRICITY_9",
+			"name": "Vbn",
+			"description": "Voltage L2-L3",
+			"description2": "B相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.ELECTRICITY_8",
+			"name": "Van",
+			"description": "Voltage L1-L2",
+			"description2": "A相电压",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 32,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.POWER_15",
+			"name": "fac",
+			"description": "Total power factor",
+			"description2": "三相功率因数",
+			"dataType": "DOUBLE",
+			"unit": "#",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 86,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.POWER_14",
+			"name": "S",
+			"description": "Total reactive power Qtot",
+			"description2": "三相无功功率",
+			"dataType": "DOUBLE",
+			"unit": "var",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 70,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.POWER_13",
+			"name": "Q",
+			"description": "Total apparent power",
+			"description2": "三相视在功率",
+			"dataType": "DOUBLE",
+			"unit": "VA",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 62,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.POWER_12",
+			"name": "P",
+			"description": "Total active power",
+			"description2": "三相有功功率",
+			"dataType": "DOUBLE",
+			"unit": "kW",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 54,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.FREQUENCY_17",
+			"name": "fr",
+			"description": "Line frequency",
+			"description2": "频率",
+			"dataType": "DOUBLE",
+			"unit": "Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 46,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_24",
+			"name": "THDIc",
+			"description": "THD current L3 / c",
+			"description2": "THD Ic",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 98,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_23",
+			"name": "THDIb",
+			"description": "THD current L2 / b",
+			"description2": "THD Ib",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 96,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_22",
+			"name": "THDIa",
+			"description": "THD current L1 / a",
+			"description2": "THD Ia",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 94,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_21",
+			"name": "THDUc",
+			"description": "THD voltage L3 / c",
+			"description2": "THD Uc",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 104,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_20",
+			"name": "THDUb",
+			"description": "THD voltage L2 / b",
+			"description2": "THD Ub",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 102,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.THD_19",
+			"name": "THDUa",
+			"description": "THD voltage L1 / a",
+			"description2": "THD Ua",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 100,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_34",
+			"name": "DISCPOS",
+			"description": "Disconnected position",
+			"description2": "断路器位置",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 218,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_33",
+			"name": "TRIPALL",
+			"description": "Number of all trips",
+			"description2": "脱扣次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 232,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_32",
+			"name": "TRIPPF",
+			"description": "Number of phase failure trips",
+			"description2": "跳闸失败次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 228,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_31",
+			"name": "TRIPRC",
+			"description": "Number of residual current trips",
+			"description2": "自产零序动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 226,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_30",
+			"name": "TRIPG",
+			"description": "Number of G trips",
+			"description2": "接地故障动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 223,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_29",
+			"name": "TRIPN",
+			"description": "Number of N trips",
+			"description2": "N线故障动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 222,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_28",
+			"name": "TRIPL",
+			"description": "Number of L trips",
+			"description2": "过载保护动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 221,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_27",
+			"name": "TRIPS",
+			"description": "Number of S trips",
+			"description2": "瞬时速断动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 220,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON3VA2_MODBUS-TCP_.DIAGNOSTIC_26",
+			"name": "TRIPI",
+			"description": "Number of I trips",
+			"description2": "延时速断动作次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 219,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

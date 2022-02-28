@@ -1,0 +1,16 @@
+{
+  "email": {
+    "sender": "mindspherebasic@126.com",
+    "subject": "SIxMAC MindPower OPCUA connector, Latest error report\"\"OPCUA Connection Error Report",
+    "host": "smtp.126.com",
+    "port": 25,
+    "auth": {
+      "user": "mindspherebasic@126.com", "pass": "MXFDLRVCHXXGCFPG"
+    },
+    "from": "mindspherebasic@126.com",
+    "to": " \"Dev mail\" <mindspherebasic@126.com>, \"Offline work\" <gaof2001@hotmail.com>",
+    "cc": "\"IoT mail\" <iplc126@126.com>",
+    "bcc": "\"work mail\" <fei-gao@siemens.com>",
+    "recipients": "fei-gao@siemens.com, gaof2001@hotmail.com, \"Publish Unknown\" <mindspherebasic@126.com>"
+  }
+}

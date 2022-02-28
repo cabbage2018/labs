@@ -1,0 +1,23 @@
+{
+	"description": "Exhibition Town Hall, SEAL SU-ZHOU, JS.Exihibition@SEAL",
+	"array": [
+		{
+			"desc": "SS#1",
+			"ip": "192.168.1.111",
+			"port": 502,
+			"subordinatorNumber": 127,
+			"model": "SIRIUS3RW55",
+			"online": false,
+			"timeoutMillisecond": 5000
+		},
+		{
+			"desc": "device#1",
+			"ip": "192.168.1.124",
+			"port": 502,
+			"subordinatorNumber": 147,
+			"model": "SIRIUS3RW55",
+			"online": false,
+			"timeoutMillisecond": 5000
+		}
+	]
+}

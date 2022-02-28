@@ -1,0 +1,313 @@
+{
+	"machineModel": "simacdevPAC4200",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-TCP",
+	"dataPoints": [
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_12",
+			"name": "Tpe2",
+			"description": "Apparent Energy Tariff 2",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Vah",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 837,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_11",
+			"name": "Tpe1",
+			"description": "Apparent Energy Tariff 1",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Vah",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 833,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_10",
+			"name": "Tre2",
+			"description": "Reactive Energy Export Tariff 2",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 829,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_9",
+			"name": "Tre1",
+			"description": "Reactive Energy Export Tariff 1",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 825,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_8",
+			"name": "Tri2",
+			"description": "Reactive Energy Import Tariff 2",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 821,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_7",
+			"name": "Tri1",
+			"description": "Reactive Energy Import Tariff 1",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "varh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 817,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_6",
+			"name": "Tae2",
+			"description": "Active Energy Export Tariff 2",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 813,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_5",
+			"name": "Tae1",
+			"description": "Active Energy Export Tariff 1",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 809,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_4",
+			"name": "Tai2",
+			"description": "Active Energy Import Tariff 2",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 805,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ENERGY_3",
+			"name": "Tai1",
+			"description": "Active Energy Import Tariff 1",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 801,
+				"functionType": 3,
+				"quantity": 4,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.FREQUENCY_14",
+			"name": "fr",
+			"description": "Frequency",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 55,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.POWER_16",
+			"name": "fac",
+			"description": "Total power factor",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 69,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ELECTRICITY_20",
+			"name": "Vcn",
+			"description": "Voltage c-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 5,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ELECTRICITY_19",
+			"name": "Vbn",
+			"description": "Voltage b-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 3,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.ELECTRICITY_18",
+			"name": "Van",
+			"description": "Voltage a-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "V",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 1,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.THD_24",
+			"name": "H3Vcn",
+			"description": "3rd Harmonic Voltage c-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 9011,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.THD_23",
+			"name": "H3Vbn",
+			"description": "3rd Harmonic Voltage b-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 9009,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SENTRON7KM4200_MODBUS-TCP_.THD_22",
+			"name": "H3Van",
+			"description": "3rd Harmonic Voltage a-n",
+			"description2": "",
+			"dataType": "DOUBLE",
+			"unit": "%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 9007,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

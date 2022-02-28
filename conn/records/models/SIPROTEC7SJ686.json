@@ -1,0 +1,500 @@
+{
+	"machineModel": "SIPROTEC7SJ686",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-RTU",
+	"dataPoints": [
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_9",
+			"name": "rerror",
+			"description": "RERROR",
+			"description2": "无线测温接收模块故障",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10410,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_8",
+			"name": "adtc1",
+			"description": "ADTC",
+			"description2": "间隔 1 断路器下触臂 C 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10353,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_7",
+			"name": "adtb1",
+			"description": "ADTB",
+			"description2": "间隔 1 断路器下触臂 B 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10352,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_6",
+			"name": "adta1",
+			"description": "ADTA",
+			"description2": "间隔 1 断路器下触臂 A 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10351,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_5",
+			"name": "autc1",
+			"description": "AUTC",
+			"description2": "间隔 1 断路器上触臂 C 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10350,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_4",
+			"name": "autb1",
+			"description": "AUTB",
+			"description2": "间隔 1 断路器上触臂 B 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10349,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.EVENT_3",
+			"name": "auta1",
+			"description": "AUTA",
+			"description2": "间隔 1 断路器上触臂 A 相温度异 常",
+			"dataType": "BOOLEAN",
+			"unit": "1x%",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 10348,
+				"functionType": 2,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_20",
+			"name": "uca",
+			"description": "Uc-a",
+			"description2": "Uc-a",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30009,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_19",
+			"name": "ubc",
+			"description": "Ub-c",
+			"description2": "Ub-c",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30008,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_18",
+			"name": "uab",
+			"description": "Ua-b",
+			"description2": "Ua-b",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30007,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_17",
+			"name": "uc",
+			"description": "Uc",
+			"description2": "Uc",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30006,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_16",
+			"name": "ub",
+			"description": "Ub",
+			"description2": "Ub",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30005,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_15",
+			"name": "ua",
+			"description": "Ua",
+			"description2": "Ua",
+			"dataType": "INT",
+			"unit": "0.01V",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30004,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_14",
+			"name": "in",
+			"description": "In",
+			"description2": "In",
+			"dataType": "INT",
+			"unit": "0.1A",
+			"scaling": 0.1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30003,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_13",
+			"name": "ic",
+			"description": "Ic",
+			"description2": "Ic",
+			"dataType": "INT",
+			"unit": "0.1A",
+			"scaling": 0.1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30002,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_12",
+			"name": "ib",
+			"description": "Ib",
+			"description2": "Ib",
+			"dataType": "INT",
+			"unit": "0.1A",
+			"scaling": 0.1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30001,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.ELECTRICITY_11",
+			"name": "ia",
+			"description": "Ia",
+			"description2": "Ia",
+			"dataType": "INT",
+			"unit": "0.1A",
+			"scaling": 0.1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30000,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.POWER_26",
+			"name": "pf",
+			"description": "PF",
+			"description2": "PF( 功率因数 )",
+			"dataType": "INT",
+			"unit": "0.001*",
+			"scaling": 0.001,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30013,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.POWER_25",
+			"name": "q",
+			"description": "Q",
+			"description2": "Q( 无功功率 )",
+			"dataType": "INT",
+			"unit": "0.01Var",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30011,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.POWER_24",
+			"name": "p",
+			"description": "P",
+			"description2": "P( 有功功率 )",
+			"dataType": "INT",
+			"unit": "0.01W",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30010,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.POWER_23",
+			"name": "wq",
+			"description": "Wq",
+			"description2": "正向无功 Wq",
+			"dataType": "INT",
+			"unit": "Var",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40202,
+				"functionType": 3,
+				"quantity": 5,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.POWER_22",
+			"name": "wp",
+			"description": "Wp",
+			"description2": "正向有功 Wp",
+			"dataType": "INT",
+			"unit": "W",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40200,
+				"functionType": 3,
+				"quantity": 5,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.FREQUENCY_28",
+			"name": "frequency",
+			"description": "frequency",
+			"description2": "f( 频率 )",
+			"dataType": "INT",
+			"unit": "0.01Hz",
+			"scaling": 0.01,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 30012,
+				"functionType": 4,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_35",
+			"name": "t2c",
+			"description": "T2C",
+			"description2": "间隔 1 断路器下触臂 C 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40440,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_34",
+			"name": "t2b",
+			"description": "T2B",
+			"description2": "间隔 1 断路器下触臂 B 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40435,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_33",
+			"name": "t2a",
+			"description": "T2A",
+			"description2": "间隔 1 断路器下触臂 A 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40430,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_32",
+			"name": "t1c",
+			"description": "T1C",
+			"description2": "间隔 1 断路器上触臂 C 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40425,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_31",
+			"name": "t1b",
+			"description": "T1B",
+			"description2": "间隔 1 断路器上触臂 B 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40420,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIPROTEC7SJ686_MODBUS-RTU_.TEMPERATURE_30",
+			"name": "t1a",
+			"description": "T1A",
+			"description2": "间隔 1 断路器上触臂 A 相温度",
+			"dataType": "INT",
+			"unit": "C",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 40415,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

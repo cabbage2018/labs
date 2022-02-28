@@ -1,0 +1,64 @@
+{
+	"datasources": [
+		{
+			"lastupdate": "08/11/2020 6:21:01 PM",
+			"decoderlink": "_SIE7KM4200.json",
+			"functioncode": 3,
+			"position": 1,
+			"counts": 80,
+			"intervalSeconds": 2,
+			"prefix": "_4200",
+			"suffix": "--",
+			"filepath": "/public/buffer/",
+			"host": "10.0.0.42",
+			"port": 502,
+			"protocol": "MODBUS-TCP",
+			"slaveNumber": 20
+		},
+		{
+			"lastupdate": "08/11/2020 6:21:01 PM",
+			"decoderlink": "_SIE7KM4200.json",
+			"functioncode": 3,
+			"position": 801,
+			"counts": 40,
+			"intervalSeconds": 2,
+			"prefix": "_4200",
+			"suffix": "--",
+			"filepath": "/public/buffer/",
+			"host": "10.0.0.42",
+			"port": 502,
+			"protocol": "MODBUS-TCP",
+			"slaveNumber": 20
+		},
+		{
+			"lastupdate": "08/11/2020 6:21:01 PM",
+			"decoderlink": "_SIE7KM4200.json",
+			"functioncode": 3,
+			"position": 261,
+			"counts": 2,
+			"intervalSeconds": 2,
+			"prefix": "_4200",
+			"suffix": "--",
+			"filepath": "/public/buffer/",
+			"host": "10.0.0.42",
+			"port": 502,
+			"protocol": "MODBUSTCP",
+			"slaveNumber": 20
+		},
+		{
+			"lastupdate": "08/11/2020 6:21:01 PM",
+			"decoderlink": "_SIE7KM4200.json",
+			"functioncode": 3,
+			"position": 9001,
+			"counts": 20,
+			"intervalSeconds": 2,
+			"prefix": "_4200",
+			"suffix": "--",
+			"filepath": "/public/buffer/",
+			"host": "10.0.0.42",
+			"port": 502,
+			"protocol": "MODBUSTCP",
+			"slaveNumber": 20
+		}
+	]
+}

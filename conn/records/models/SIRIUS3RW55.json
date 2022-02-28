@@ -1,0 +1,636 @@
+{
+	"machineModel": "SIRIUS3RW55",
+	"description": "11/13/2020 3:17:32 PM",
+	"protocol": "MODBUS-RTU",
+	"dataPoints": [
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ENERGY_5",
+			"name": "Tae1",
+			"description": "3RW",
+			"description2": "反向有功电能（总计）",
+			"dataType": "DOUBLE",
+			"unit": "1 Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35903,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ENERGY_4",
+			"name": "Tai2",
+			"description": "3RW",
+			"description2": "正向有功电能（总计）",
+			"dataType": "DOUBLE",
+			"unit": "1 Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35899,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ENERGY_3",
+			"name": "Tai1",
+			"description": "3RW",
+			"description2": "正向有功电能（总计）",
+			"dataType": "DOUBLE",
+			"unit": "1 Wh",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 2657,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATUS_8",
+			"name": "temperatureup",
+			"description": "3RW",
+			"description2": "电机温升",
+			"dataType": "INT",
+			"unit": "0.01",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34821,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATUS_7",
+			"name": "unbalance",
+			"description": "3RW",
+			"description2": "不对称",
+			"dataType": "INT",
+			"unit": "0.01",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34820,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.FREQUENCY_11",
+			"name": "fr2",
+			"description": "3RW",
+			"description2": "电源频率",
+			"dataType": "INT",
+			"unit": "0.5 Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34827,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.FREQUENCY_10",
+			"name": "fr",
+			"description": "3RW",
+			"description2": "输出频率",
+			"dataType": "INT",
+			"unit": "0.5 Hz",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34825,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.POWER_14",
+			"name": "fac",
+			"description": "3RW",
+			"description2": "功率因数 L1..3",
+			"dataType": "INT",
+			"unit": "0.01",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34844,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.POWER_13",
+			"name": "P",
+			"description": "3RW",
+			"description2": "有功功率",
+			"dataType": "INT",
+			"unit": "0.0001kW",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34841,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ELECTRICITY_20",
+			"name": "P",
+			"description": "3RW",
+			"description2": "有功功率",
+			"dataType": "DOUBLE",
+			"unit": "0.0001 kW",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 2631,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ELECTRICITY_19",
+			"name": "irms",
+			"description": "3RW",
+			"description2": "相电流平均值 (rms)",
+			"dataType": "DOUBLE",
+			"unit": "0.01 A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 2503,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ELECTRICITY_18",
+			"name": "imax",
+			"description": "3RW",
+			"description2": "最大相电流 (rms)",
+			"dataType": "INT",
+			"unit": "0.01 A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34853,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ELECTRICITY_17",
+			"name": "iavgrms",
+			"description": "3RW",
+			"description2": "相电流平均值 (rms)",
+			"dataType": "INT",
+			"unit": "0.01 A",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34851,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.ELECTRICITY_16",
+			"name": "iavgpercent",
+			"description": "3RW",
+			"description2": "相电流平均值 (%)",
+			"dataType": "INT",
+			"unit": "0.03125",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34849,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_28",
+			"name": "tripolside",
+			"description": "3RW",
+			"description2": "旁路过载跳闸次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35867,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_27",
+			"name": "tripolswitch",
+			"description": "3RW",
+			"description2": "开关元件过载跳闸次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35866,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_26",
+			"name": "runhours2",
+			"description": "3RW",
+			"description2": "运行小时数 - 电机",
+			"dataType": "INT",
+			"unit": "1 s",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35855,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_25",
+			"name": "tripol",
+			"description": "3RW",
+			"description2": "电机过载跳闸次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35849,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_24",
+			"name": "reversestarts",
+			"description": "3RW",
+			"description2": "电机反转起动次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35847,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_23",
+			"name": "forwardstarts",
+			"description": "3RW",
+			"description2": "电机正转起动次数",
+			"dataType": "INT",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35845,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.STATISTICS_22",
+			"name": "runhours",
+			"description": "3RW",
+			"description2": "运行小时数 - 设备",
+			"dataType": "INT",
+			"unit": "1 s",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 35843,
+				"functionType": 3,
+				"quantity": 2,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_45",
+			"name": "runtemperaturelimit",
+			"description": "3RW",
+			"description2": "操作温度过高",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34432,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_44",
+			"name": "mainpsufault2",
+			"description": "3RW",
+			"description2": "主电源旋转故障",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34315,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_43",
+			"name": "mainpsufault",
+			"description": "3RW",
+			"description2": "主电源旋转故障",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34312,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_42",
+			"name": "exceedlowlimit",
+			"description": "3RW",
+			"description2": "电流限值 - 超出下限时需要维护",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34213,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_41",
+			"name": "exceeduplimit",
+			"description": "3RW",
+			"description2": "电流限值 - 超出上限时需要维护",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 34212,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_40",
+			"name": "fault",
+			"description": "3RW",
+			"description2": "设备故障",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33992,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_39",
+			"name": "noload",
+			"description": "3RW",
+			"description2": "无负载",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33912,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_38",
+			"name": "shorttemperature2",
+			"description": "3RW",
+			"description2": "温度传感器短路",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33895,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_37",
+			"name": "brokentemperature2",
+			"description": "3RW",
+			"description2": "温度传感器断路",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33894,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_36",
+			"name": "overtemperature2",
+			"description": "3RW",
+			"description2": "温度传感器过载",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33893,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_35",
+			"name": "overlimit",
+			"description": "3RW",
+			"description2": "超出不对称限值故障",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33824,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_34",
+			"name": "motorrunning",
+			"description": "3RW",
+			"description2": "发电机运行",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33822,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_33",
+			"name": "closeol",
+			"description": "3RW",
+			"description2": "电机过载关闭",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33812,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_32",
+			"name": "shorttemperature",
+			"description": "3RW",
+			"description2": "温度传感器短路",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33810,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_31",
+			"name": "brokentemperature",
+			"description": "3RW",
+			"description2": "温度传感器断路",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33809,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		},
+		{
+			"dataPointId": "SIRIUS3RW55_MODBUS-RTU_.EVENT_30",
+			"name": "overtemperature",
+			"description": "3RW",
+			"description2": "温度传感器过载",
+			"dataType": "BOOLEAN",
+			"unit": "-",
+			"scaling": 1,
+			"dataPointData": {
+				"onDataChanged": false,
+				"address": 33808,
+				"functionType": 3,
+				"quantity": 1,
+				"bitOffset": 0,
+				"bitCount": 0
+			}
+		}
+	]
+}

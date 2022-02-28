@@ -1,0 +1,56 @@
+[
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    },
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    },
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    },
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    },
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    },
+    {
+        "ip": "192.168.2.52",
+        "port": 502,
+        "subordinatorNumber": 125,
+        "model": "7KM3200",
+        "protocol": "MODBUSTCP",
+        "online": false,
+        "timeoutMillisecond": 3000
+    }
+]

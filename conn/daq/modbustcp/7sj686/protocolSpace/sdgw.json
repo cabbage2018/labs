@@ -1,0 +1,456 @@
+{
+	"uploadCycle": "900",
+	"configurationId": "11/12/2020 4:30:10 PM",
+	"onlineLight": "grey",
+	"dataSources": [
+		{
+			"name": "COM1_19200_3_40200_4",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SIPROTEC7SJ686",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "RTU",
+				"ipAddress": 3,
+				"serialType": 90,
+				"baudrate": 40200,
+				"dataBits": 3,
+				"stopBits": 90,
+				"parity": 40200,
+				"termination": 4
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SIPROTEC7SJ686",
+					"functionType": 3,
+					"slaveNumber": 90,
+					"address": 40200,
+					"quantity": 4
+				},
+				{
+					"decoderlink": "SIPROTEC7SJ686",
+					"functionType": 3,
+					"slaveNumber": 90,
+					"address": 40415,
+					"quantity": 26
+				},
+				{
+					"decoderlink": "SIPROTEC7SJ686",
+					"functionType": 4,
+					"slaveNumber": 90,
+					"address": 30000,
+					"quantity": 14
+				},
+				{
+					"decoderlink": "SIPROTEC7SJ686",
+					"functionType": 2,
+					"slaveNumber": 90,
+					"address": 10348,
+					"quantity": 63
+				}
+			]
+		},
+		{
+			"name": "_NONE_opc.tcp://192.168.1.20:4840__",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "DESIGOCCBT",
+			"protocol": "OPC-UA",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"opcUaServerName": "",
+				"opcUaServerAddress": "opc.tcp://192.168.1.20:4840",
+				"opcUaServerIPAddress": "",
+				"opcUaCertificateMetadata": "",
+				"opcUaAuthenticationType": "NONE",
+				"opcUaUsername": "",
+				"opcUaPassword": ""
+			},
+			"dataSources": [
+				{
+					"address": "opc.tcp://192.168.1.20:4840",
+					"onDataChanged": false
+				},
+				{
+					"address": "",
+					"onDataChanged": false
+				},
+				{
+					"address": "-",
+					"onDataChanged": false
+				}
+			]
+		},
+		{
+			"name": "192.168.2.150_443_DB15.DBX8.3_DB15.DBX8.3_",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SIMATICS7_1200",
+			"protocol": "S7",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"ipAddress": "192.168.2.150"
+			},
+			"dataSources": [
+				{
+					"address": "DB15.DBX8.3",
+					"onDataChanged": false
+				}
+			]
+		},
+		{
+			"name": "192.168.2.99_502_3_34817_38",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SIRIUS3RW59",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": 3,
+				"port": 38
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 34817,
+					"quantity": 38
+				},
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 2497,
+					"quantity": 162
+				},
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 3,
+					"slaveNumber": 100,
+					"address": 35843,
+					"quantity": 62
+				},
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 33795,
+					"quantity": 198
+				},
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 34019,
+					"quantity": 176
+				},
+				{
+					"decoderlink": "SIRIUS3RW59",
+					"functionType": 1,
+					"slaveNumber": 100,
+					"address": 34194,
+					"quantity": 258
+				}
+			]
+		},
+		{
+			"name": "192.168.2.52_502_3_201_80",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON7KM5200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": 3,
+				"port": 80
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 201,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 2,
+					"address": 801,
+					"quantity": 49
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 3,
+					"address": 1001,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 4,
+					"address": 1101,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 5,
+					"address": 1201,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 6,
+					"address": 301,
+					"quantity": 50
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 2,
+					"slaveNumber": 7,
+					"address": 37054,
+					"quantity": 6
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 8,
+					"address": 1,
+					"quantity": 141
+				},
+				{
+					"decoderlink": "SENTRON7KM5200",
+					"functionType": 3,
+					"slaveNumber": 8,
+					"address": 401,
+					"quantity": 99
+				}
+			]
+		},
+		{
+			"name": "192.168.2.100_502_3_1_140",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON3VA2",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": 3,
+				"port": 140
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON3VA2",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 140
+				},
+				{
+					"decoderlink": "SENTRON3VA2",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 218,
+					"quantity": 6
+				},
+				{
+					"decoderlink": "SENTRON3VA2",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 226,
+					"quantity": 7
+				}
+			]
+		},
+		{
+			"name": "192.168.2.42_17003_3_1_120",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON7KM3100",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "RTU",
+				"ipAddress": 3,
+				"serialType": 1,
+				"baudrate": 1,
+				"dataBits": 3,
+				"stopBits": 1,
+				"parity": 1,
+				"termination": 120
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON7KM3100",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 120
+				},
+				{
+					"decoderlink": "SENTRON7KM3100",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 24123,
+					"quantity": 4
+				},
+				{
+					"decoderlink": "SENTRON7KM3100",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "192.168.2.42_502_3_1_80",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON7KM4200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": 3,
+				"port": 80
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 801,
+					"quantity": 40
+				},
+				{
+					"decoderlink": "SENTRON7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 261,
+					"quantity": 12
+				},
+				{
+					"decoderlink": "SENTRON7KM4200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 9001,
+					"quantity": 96
+				},
+				{
+					"decoderlink": "SENTRON7KM4200",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "192.168.2.32_502_3_1_80",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON7KM3200",
+			"protocol": "MODBUS-TCP",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "TCP",
+				"ipAddress": 3,
+				"port": 80
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON7KM3200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 80
+				},
+				{
+					"decoderlink": "SENTRON7KM3200",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 801,
+					"quantity": 40
+				},
+				{
+					"decoderlink": "SENTRON7KM3200",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 207,
+					"quantity": 3
+				}
+			]
+		},
+		{
+			"name": "192.168.2.42_17003_3_24070_63",
+			"description": "11/12/2020 4:30:10 PM",
+			"machineModel": "SENTRON3WL",
+			"protocol": "MODBUS-RTU",
+			"readCycleInSeconds": 600,
+			"onlineLight": "grey",
+			"protocolData": {
+				"protocolType": "RTU",
+				"ipAddress": 3,
+				"serialType": 1,
+				"baudrate": 24070,
+				"dataBits": 3,
+				"stopBits": 1,
+				"parity": 24070,
+				"termination": 63
+			},
+			"dataSources": [
+				{
+					"decoderlink": "SENTRON3WL",
+					"functionType": 3,
+					"slaveNumber": 1,
+					"address": 24070,
+					"quantity": 63
+				},
+				{
+					"decoderlink": "SENTRON3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 1,
+					"quantity": 1
+				},
+				{
+					"decoderlink": "SENTRON3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 23565,
+					"quantity": 1
+				},
+				{
+					"decoderlink": "SENTRON3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 23297,
+					"quantity": 14
+				},
+				{
+					"decoderlink": "SENTRON3WL",
+					"functionType": 2,
+					"slaveNumber": 1,
+					"address": 24122,
+					"quantity": 2
+				}
+			]
+		}
+	]
+}
