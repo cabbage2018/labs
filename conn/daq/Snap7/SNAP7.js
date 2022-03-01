@@ -1,10 +1,7 @@
 //npm install node-snap7
 //https://www.npmjs.com/package/node-snap7
 
-// Client implement
-
-var snap7 = require('node-snap7');
- 
+var snap7 = require('node-snap7'); 
 var s7client = new snap7.S7Client();
 
 s7client.ConnectTo('192.168.1.12', 0, 1, function(err) {

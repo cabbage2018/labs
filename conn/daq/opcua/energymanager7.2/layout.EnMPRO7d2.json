@@ -1,0 +1,33 @@
+{
+    "endpointUrl": "opc.tcp://remoteserver:48400",
+    "protocol": "OPCUA",
+    "model": "SIMOCODE(PROVPN)",
+    "timeoutMillisecond": 2000,
+    "totalPoints": 3,
+    "array": [
+        {
+            "index": 1,
+            "description": "Current I_L2",
+            "addr": "ns=2;i=35;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "�����IL2%"
+        },
+        {
+            "index": 2,
+            "description": "Current I_L1",
+            "addr": "ns=2;i=34;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "�����IL1%"
+        },
+        {
+            "index": 3,
+            "description": "Cos phi",
+            "addr": "ns=2;i=32;",
+            "unit": "0.01",
+            "datatype": "Unsigned byte",
+            "cn": "��������"
+        }
+    ]
+}

@@ -11,11 +11,6 @@ function commissioning(){}
 	named or structed:
 		We have worked on that one like 3WL 3VA2, 7SJ686 etc.,
 		
-	uniformed:
-		don't care the structure but rather touch that asset for make sure it is network connected and online and accessible with desired protocol/channel(sometime one device even support several)
-		uniform device that means
-		NO model attached
-		voila cela moi
 */
 
 function bootstrap() {
@@ -74,10 +69,31 @@ function bootstrap() {
 let array = []
 let persistFilePath = path.join(__dirname, './spaces.json')
 
-function loading (folder, extname = '.json') {
-	console.log('searching ', __dirname)
-	let path1 = path.join(__dirname, folder)
-	var files1 = fs.readdirSync(path1, { encoding: 'utf-8' })
+function deserialize (){
+	if(fs.existsSync(persistFilePath)){
+		let o = JSON.parse(fs.readFileSync(persistFilePath))
+		for(let i = 0; i < o.length; i = i + 1){
+			array.push(o[i])
+		}
+		array['existing'] = o.length
+	} else{
+		let r = loading(__dirname)
+		for(let i = 0; i < r.length; i = i + 1){
+			array.push(r[i])
+		}
+	}
+	return
+}
+
+function serialize(json) {
+	fs.writeFileSync(persistFilePath, JSON.stringify(json))
+}
+
+/* Minimum cycle in Node = 1ms and 50ms in Browser mightly */
+function iterateSingleModel(pathDeviceRoot){
+
+	// let path1 = path.join(__dirname, folder)
+	let files1 = fs.readdirSync(pathDeviceRoot, { encoding: 'utf-8' })
 	let collector = []
 	for (var i = 0; i < files1.length; i++) {
 		let path2 = path.join(path1, files1[i])
@@ -106,35 +122,13 @@ function loading (folder, extname = '.json') {
 	return collector
 }
 
-function deserialize (){
-	if(fs.existsSync(persistFilePath)){
-		let o = JSON.parse(fs.readFileSync(persistFilePath))
-		for(let i = 0; i < o.length; i = i + 1){
-			array.push(o[i])
-		}
-		array['existing'] = o.length
-	} else{
-		let r = loading(__dirname)
-		for(let i = 0; i < r.length; i = i + 1){
-			array.push(r[i])
-		}
-	}
-	return
-}
-
-function serialize(json) {
-	fs.writeFileSync(persistFilePath, JSON.stringify(json))
-}
-
-/* Minimum cycle in Node = 1ms and 50ms in Browser mightly */
-
-function listType(folder) {
-	console.log('searching ', folder)
+function listModel(){
 	var files1 = fs.readdirSync(folder, { encoding: 'utf-8' })
 	let a = new Map()
 	for (var i = 0; i < files1.length; i++) {
 		let path2 = path.join(folder, files1[i])
 		var fileStat = fs.statSync(path2)
+		
 		if (fileStat.isDirectory()) {
 			a.set(files1[i], path2)
 			console.log(files1[i], path2)
@@ -142,9 +136,51 @@ function listType(folder) {
 	}
 	return a
 }
+/* 
+	modeled physical device
+*/
+
+
+/* 
+	raw physical device
+		uniformed:
+		don't care the structure but rather touch that asset for make sure it is network connected and online and accessible with desired protocol/channel(sometime one device even support several)
+		uniform device that means
+		NO model attached
+		voila cela moi
+*/
+function removeSymbol(inputString){
+	log.debug(inputString)
+	let purified = inputString.replace(/[-_:./\\]/gi, "")
+	log.debug(purified)
+	return purified
+}
+
+function listRawDevice(fullpath){
+	let jsonArray = JSON.parse(fs.readFileSync(fullpath))
+	let matrix = listModel()
+
+	for (let i = 0; i < jsonArray.length; i++) {
+		let segment = jsonArray[i]
+		log.debug(segment)
+
+		let protocolAbbreviate = removeSymbol(segment.protocol)
+		let protocolLowerCase = protocolAbbreviate.toLowerCase()
+		log.debug(protocolLowerCase)
+
+		let modelAbbreviate = removeSymbol(segment.model)
+		let modelLowerCase = modelAbbreviate.toLowerCase()
+		log.debug(modelLowerCase)
+
+		if(matrix.get(modelLowerCase)){
+			let designated = matrix.get(modelLowerCase)
+
+		}
+
+	}
+}
 
 module.exports = {
-	
 	array,
 	deserialize, 
 	serialize,

@@ -1,47 +1,59 @@
 [
     {
-        "desc": "demo-project",
+        "name": "Unknown",
+        "description": "demo-project",
+
         "ip": "192.168.2.135",
         "port": 502,
         "subordinatorNumber": 127,
-        "model": "3wl",
-        "protocol": "MODBUS-TCP",
-        "online": false,
         "timeoutMillisecond": 3000,
+
+        "protocol": "MODBUS-TCP",
+        "model": "3wl",
         "register": 24070,
         "quantity": 110,
-        "signals": "ADIO-TEST",
         "functioncode": 3,
+
+        "online": false,
+        "signals": "ADIO-TEST",
         "flash": [65534, 65533]
     },
     {
-        "desc": "3va2, com800",
+        "name": "Unknown",
+        "description": "3va2, com800",
+
         "ip": "192.168.2.20",
         "port": 502,
-        "subordinatorNumber": 127,
-        "model": "Unknown-Device",
-        "protocol": "MODBUS-TCP",
-        "online": false,
+        "subordinatorNumber": 20,
         "timeoutMillisecond": 3000,
+
+        "protocol": "MODBUS-TCP",
+        "model": "Unknown-Device",
         "register": 1,
         "quantity": 100,
-        "signals": "ADIO-TEST",
         "functioncode": 3,
+
+        "online": false,
+        "signals": "ADIO-TEST",
         "flash": [65534, 65533]
     },
     {
-        "desc": "Unknown-Device",
+        "name": "Unknown",
+        "description": "Physical-Device",
+
         "ip": "192.168.2.32",
         "port": 502,
         "subordinatorNumber": 127,
-        "model": "Unknown-Device",
-        "protocol": "MODBUS-TCP",
-        "online": false,
         "timeoutMillisecond": 3000,
+
+        "protocol": "MODBUS-TCP",
+        "model": "Unknown-Device",
         "register": 1,
         "quantity": 120,
-        "signals": "ADIO-TEST",
         "functioncode": 3,
+        
+        "online": false,
+        "signals": "ADIO-TEST",
         "flash": [65534, 65533]
     }
 ]

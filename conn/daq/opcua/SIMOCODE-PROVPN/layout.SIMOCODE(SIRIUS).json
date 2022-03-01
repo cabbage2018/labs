@@ -1,0 +1,1841 @@
+{
+    "endpointUrl": "opc.tcp://remoteserver:48400",
+    "protocol": "OPCUA",
+    "model": "SIMOCODE(PROVPN)",
+    "timeoutMillisecond": 2000,
+    "totalPoints": 229,
+    "array": [
+        {
+            "index": 1,
+            "description": "Event - AM2 open circuit",
+            "addr": "ns=2;i=444;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM2 ��·"
+        },
+        {
+            "index": 2,
+            "description": "Event - Limit monitor 6",
+            "addr": "ns=2;i=433;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 6"
+        },
+        {
+            "index": 3,
+            "description": "Event - Limit monitor 5",
+            "addr": "ns=2;i=432;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 5"
+        },
+        {
+            "index": 4,
+            "description": "Event - AM2 trip level 0/4-20mA<",
+            "addr": "ns=2;i=431;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM2 �ѿ� 0/4 - 20 mA<"
+        },
+        {
+            "index": 5,
+            "description": "Event - AM2 trip level 0/4-20mA>",
+            "addr": "ns=2;i=430;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM2 �ѿ� 0/4 - 20 mA>"
+        },
+        {
+            "index": 6,
+            "description": "Event - AM2 warning level 0/4-20mA<",
+            "addr": "ns=2;i=429;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM2 ���� 0/4 - 20 mA<"
+        },
+        {
+            "index": 7,
+            "description": "Event - AM2 warning level 0/4-20mA>",
+            "addr": "ns=2;i=428;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM2 ���� 0/4 - 20 mA>"
+        },
+        {
+            "index": 8,
+            "description": "Event - TM2 out of range",
+            "addr": "ns=2;i=423;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM2 ������"
+        },
+        {
+            "index": 9,
+            "description": "Event - TM2 sensor fault",
+            "addr": "ns=2;i=422;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM2 ����������"
+        },
+        {
+            "index": 10,
+            "description": "Event - TM2 trip level T>",
+            "addr": "ns=2;i=421;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM2 �ѿ� T>"
+        },
+        {
+            "index": 11,
+            "description": "Event - TM2 warning level T>",
+            "addr": "ns=2;i=420;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM2 ���� T>"
+        },
+        {
+            "index": 12,
+            "description": "Warning - AM2 open circuit",
+            "addr": "ns=2;i=404;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 ��·"
+        },
+        {
+            "index": 13,
+            "description": "Warning - AM2 warning level 0/4-20mA<",
+            "addr": "ns=2;i=397;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 �ѿ� 0/4 - 20 mA<"
+        },
+        {
+            "index": 14,
+            "description": "Warning - AM2 warning level 0/4-20mA>",
+            "addr": "ns=2;i=396;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 �ѿ� 0/4 - 20 mA>"
+        },
+        {
+            "index": 15,
+            "description": "Warning - TM2 out of range",
+            "addr": "ns=2;i=391;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ������"
+        },
+        {
+            "index": 16,
+            "description": "Warning - TM2 sensor fault",
+            "addr": "ns=2;i=390;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ����������"
+        },
+        {
+            "index": 17,
+            "description": "Warning - TM2 warning level T>",
+            "addr": "ns=2;i=388;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ���� T>"
+        },
+        {
+            "index": 18,
+            "description": "Trip - AM2 open circuit",
+            "addr": "ns=2;i=372;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 ��·"
+        },
+        {
+            "index": 19,
+            "description": "Trip - AM2 trip level 0/4-20mA<",
+            "addr": "ns=2;i=365;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 �ѿ� 0/4 - 20 mA<"
+        },
+        {
+            "index": 20,
+            "description": "Trip - AM2 trip level 0/4-20mA>",
+            "addr": "ns=2;i=364;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM2 �ѿ� 0/4 - 20 mA>"
+        },
+        {
+            "index": 21,
+            "description": "Trip - TM2 out of range",
+            "addr": "ns=2;i=358;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ������"
+        },
+        {
+            "index": 22,
+            "description": "Trip - TM2 sensor fault",
+            "addr": "ns=2;i=357;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ����������"
+        },
+        {
+            "index": 23,
+            "description": "Trip - TM2 trip level T>",
+            "addr": "ns=2;i=356;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM2 ���� T>"
+        },
+        {
+            "index": 24,
+            "description": "Trip - Cross circuit",
+            "addr": "ns=2;i=352;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �����·"
+        },
+        {
+            "index": 25,
+            "description": "Trip - Wiring",
+            "addr": "ns=2;i=351;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����"
+        },
+        {
+            "index": 26,
+            "description": "Trip - Safety-related tripping",
+            "addr": "ns=2;i=350;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��ȫ�ѿ�"
+        },
+        {
+            "index": 27,
+            "description": "Trip - Test shutdown",
+            "addr": "ns=2;i=349;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���Թض�"
+        },
+        {
+            "index": 28,
+            "description": "Trip - AM1 open circuit",
+            "addr": "ns=2;i=348;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 ��·"
+        },
+        {
+            "index": 29,
+            "description": "Trip - Dry-running protection error",
+            "addr": "ns=2;i=347;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ø����б�������"
+        },
+        {
+            "index": 30,
+            "description": "Trip - Dry running pump",
+            "addr": "ns=2;i=346;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ø�����"
+        },
+        {
+            "index": 31,
+            "description": "Trip - External fault 6",
+            "addr": "ns=2;i=345;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 6"
+        },
+        {
+            "index": 32,
+            "description": "Trip - External fault 5",
+            "addr": "ns=2;i=344;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 5"
+        },
+        {
+            "index": 33,
+            "description": "Trip - External fault 4",
+            "addr": "ns=2;i=343;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 4"
+        },
+        {
+            "index": 34,
+            "description": "Trip - External fault 3",
+            "addr": "ns=2;i=342;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 3"
+        },
+        {
+            "index": 35,
+            "description": "Trip - External fault 2",
+            "addr": "ns=2;i=341;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 2"
+        },
+        {
+            "index": 36,
+            "description": "Trip - External fault 1",
+            "addr": "ns=2;i=340;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 1"
+        },
+        {
+            "index": 37,
+            "description": "Trip - No. of starts >",
+            "addr": "ns=2;i=336;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �𶯴��� >"
+        },
+        {
+            "index": 38,
+            "description": "Trip - Stalled rotor",
+            "addr": "ns=2;i=332;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��ת"
+        },
+        {
+            "index": 39,
+            "description": "Trip - AM1 trip level 0/4-20mA<",
+            "addr": "ns=2;i=331;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 �ѿ� 0/4 - 20 mA<"
+        },
+        {
+            "index": 40,
+            "description": "Trip - AM1 trip level 0/4-20mA>",
+            "addr": "ns=2;i=330;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 �ѿ� 0/4 - 20 mA>"
+        },
+        {
+            "index": 41,
+            "description": "Trip - Trip level U<",
+            "addr": "ns=2;i=329;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� U<"
+        },
+        {
+            "index": 42,
+            "description": "Trip - Trip level cos phi<",
+            "addr": "ns=2;i=328;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� cos �� <"
+        },
+        {
+            "index": 43,
+            "description": "Trip - Trip level P<",
+            "addr": "ns=2;i=327;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� P<"
+        },
+        {
+            "index": 44,
+            "description": "Trip - Trip level P>",
+            "addr": "ns=2;i=326;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� P>"
+        },
+        {
+            "index": 45,
+            "description": "Trip - Trip level I<",
+            "addr": "ns=2;i=325;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� I<"
+        },
+        {
+            "index": 46,
+            "description": "Trip - Trip level I>",
+            "addr": "ns=2;i=324;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ѿ� I>"
+        },
+        {
+            "index": 47,
+            "description": "Trip - EM Short Circuit",
+            "addr": "ns=2;i=323;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - EM ��·"
+        },
+        {
+            "index": 48,
+            "description": "Trip - EM Open Circuit",
+            "addr": "ns=2;i=322;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - EM ��·"
+        },
+        {
+            "index": 49,
+            "description": "Trip - TM1 out of range",
+            "addr": "ns=2;i=321;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 ������"
+        },
+        {
+            "index": 50,
+            "description": "Trip - TM1 sensor fault",
+            "addr": "ns=2;i=320;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 ����������"
+        },
+        {
+            "index": 51,
+            "description": "Trip - TM1 trip level T>",
+            "addr": "ns=2;i=319;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 �ѿ� T>"
+        },
+        {
+            "index": 52,
+            "description": "Trip - Thermistor open circuit",
+            "addr": "ns=2;i=317;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �������迪·"
+        },
+        {
+            "index": 53,
+            "description": "Trip - Thermistor short circuit",
+            "addr": "ns=2;i=316;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���������·"
+        },
+        {
+            "index": 54,
+            "description": "Trip - Thermistor trip level",
+            "addr": "ns=2;i=315;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �����������"
+        },
+        {
+            "index": 55,
+            "description": "Trip - External ground fault",
+            "addr": "ns=2;i=313;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ�ӵع���"
+        },
+        {
+            "index": 56,
+            "description": "Trip - Internal ground fault",
+            "addr": "ns=2;i=312;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ڲ��ӵع���"
+        },
+        {
+            "index": 57,
+            "description": "Trip - Overload + loss of phase",
+            "addr": "ns=2;i=311;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� + �����"
+        },
+        {
+            "index": 58,
+            "description": "Trip - Overload",
+            "addr": "ns=2;i=310;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����"
+        },
+        {
+            "index": 59,
+            "description": "Trip - Unbalance",
+            "addr": "ns=2;i=309;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �಻ƽ��"
+        },
+        {
+            "index": 60,
+            "description": "Trip - Operational Protection OFF (OPO)",
+            "addr": "ns=2;i=303;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - OPO ����"
+        },
+        {
+            "index": 61,
+            "description": "Trip - Power failure (UVO)",
+            "addr": "ns=2;i=302;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - UVO ����"
+        },
+        {
+            "index": 62,
+            "description": "Trip - Test position feedback (TPF)",
+            "addr": "ns=2;i=301;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��̬�� (TPF) ����"
+        },
+        {
+            "index": 63,
+            "description": "Trip - Antivalence",
+            "addr": "ns=2;i=300;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���"
+        },
+        {
+            "index": 64,
+            "description": "Trip - End position",
+            "addr": "ns=2;i=299;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ĩ��λ��"
+        },
+        {
+            "index": 65,
+            "description": "Trip - Double 1",
+            "addr": "ns=2;i=298;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ˫ 1"
+        },
+        {
+            "index": 66,
+            "description": "Trip - Double 0",
+            "addr": "ns=2;i=297;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ˫ 0"
+        },
+        {
+            "index": 67,
+            "description": "Trip - Stalled positioner",
+            "addr": "ns=2;i=296;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��϶�λ��"
+        },
+        {
+            "index": 68,
+            "description": "Trip - Feedback off",
+            "addr": "ns=2;i=295;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - Feedback OFF"
+        },
+        {
+            "index": 69,
+            "description": "Trip - Feedback on",
+            "addr": "ns=2;i=294;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - Feedback ON"
+        },
+        {
+            "index": 70,
+            "description": "Trip - Execution stop command",
+            "addr": "ns=2;i=293;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ִ�� OFF ����"
+        },
+        {
+            "index": 71,
+            "description": "Trip - Execution on-command",
+            "addr": "ns=2;i=292;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ִ�� ON ����"
+        },
+        {
+            "index": 72,
+            "description": "Trip - PLC/DCS",
+            "addr": "ns=2;i=290;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - PLC/DCS"
+        },
+        {
+            "index": 73,
+            "description": "Trip - Bus",
+            "addr": "ns=2;i=289;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����"
+        },
+        {
+            "index": 74,
+            "description": "Trip - Parameterization",
+            "addr": "ns=2;i=288;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �����趨"
+        },
+        {
+            "index": 75,
+            "description": "Trip - Configuration fault",
+            "addr": "ns=2;i=287;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��̬����"
+        },
+        {
+            "index": 76,
+            "description": "Trip - Temporary components",
+            "addr": "ns=2;i=286;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��������洢ģ�飩"
+        },
+        {
+            "index": 77,
+            "description": "Trip - Module fault",
+            "addr": "ns=2;i=285;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ģ����ϣ��� IM��DM��"
+        },
+        {
+            "index": 78,
+            "description": "Trip - Hardware fault basic unit",
+            "addr": "ns=2;i=284;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ������ԪӲ������"
+        },
+        {
+            "index": 79,
+            "description": "Warning - Simultaneity",
+            "addr": "ns=2;i=283;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ͬ����"
+        },
+        {
+            "index": 80,
+            "description": "Warning - Feedback circuit",
+            "addr": "ns=2;i=282;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��������"
+        },
+        {
+            "index": 81,
+            "description": "Warning - Test required",
+            "addr": "ns=2;i=278;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��������"
+        },
+        {
+            "index": 82,
+            "description": "Warning - Safety-related tripping",
+            "addr": "ns=2;i=277;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��ȫ�ѿ�"
+        },
+        {
+            "index": 83,
+            "description": "Warning - AM1 open circuit",
+            "addr": "ns=2;i=276;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 ��·"
+        },
+        {
+            "index": 84,
+            "description": "Warning - External fault 6",
+            "addr": "ns=2;i=273;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 6"
+        },
+        {
+            "index": 85,
+            "description": "Warning - External fault 5",
+            "addr": "ns=2;i=272;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 5"
+        },
+        {
+            "index": 86,
+            "description": "Warning - External fault 4",
+            "addr": "ns=2;i=271;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 4"
+        },
+        {
+            "index": 87,
+            "description": "Warning - External fault 3",
+            "addr": "ns=2;i=270;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 3"
+        },
+        {
+            "index": 88,
+            "description": "Warning - External fault 2",
+            "addr": "ns=2;i=269;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 2"
+        },
+        {
+            "index": 89,
+            "description": "Warning - External fault 1",
+            "addr": "ns=2;i=268;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ���� 1"
+        },
+        {
+            "index": 90,
+            "description": "Warning - Motor stop time >",
+            "addr": "ns=2;i=267;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���ֹͣʱ�� >"
+        },
+        {
+            "index": 91,
+            "description": "Warning - Motor operating hours >",
+            "addr": "ns=2;i=266;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �����תʱ�� >"
+        },
+        {
+            "index": 92,
+            "description": "Warning - Just one start possible",
+            "addr": "ns=2;i=265;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ������һ����"
+        },
+        {
+            "index": 93,
+            "description": "Warning - No. of starts>",
+            "addr": "ns=2;i=264;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����𶯴��� >"
+        },
+        {
+            "index": 94,
+            "description": "Warning - No start possible",
+            "addr": "ns=2;i=263;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��������"
+        },
+        {
+            "index": 95,
+            "description": "Warning - Stalled rotor",
+            "addr": "ns=2;i=260;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ��ת"
+        },
+        {
+            "index": 96,
+            "description": "Warning - AM1 warning level 0/4-20mA<",
+            "addr": "ns=2;i=259;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 ���� 0/4 - 20 mA<"
+        },
+        {
+            "index": 97,
+            "description": "Warning - AM1 warning level 0/4-20mA>",
+            "addr": "ns=2;i=258;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - AM1 ���� 0/4 - 20 mA>"
+        },
+        {
+            "index": 98,
+            "description": "Warning - Warning level U<",
+            "addr": "ns=2;i=257;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� U<"
+        },
+        {
+            "index": 99,
+            "description": "Warning - Warning level cos phi<",
+            "addr": "ns=2;i=256;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� cos �� <"
+        },
+        {
+            "index": 100,
+            "description": "Warning - Warning level P<",
+            "addr": "ns=2;i=255;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� P<"
+        },
+        {
+            "index": 101,
+            "description": "Warning - Warning level P>",
+            "addr": "ns=2;i=254;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� P>"
+        },
+        {
+            "index": 102,
+            "description": "Warning - Warning level I<",
+            "addr": "ns=2;i=253;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� I<"
+        },
+        {
+            "index": 103,
+            "description": "Warning - Warning level I>",
+            "addr": "ns=2;i=252;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� I>"
+        },
+        {
+            "index": 104,
+            "description": "Warning - EM Short Circuit",
+            "addr": "ns=2;i=251;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - EM ��·"
+        },
+        {
+            "index": 105,
+            "description": "Warning - EM Open Circuit",
+            "addr": "ns=2;i=250;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - EM ��·"
+        },
+        {
+            "index": 106,
+            "description": "Warning - TM1 out of range",
+            "addr": "ns=2;i=249;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 ������"
+        },
+        {
+            "index": 107,
+            "description": "Warning - TM1 sensor fault",
+            "addr": "ns=2;i=248;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 ����������"
+        },
+        {
+            "index": 108,
+            "description": "Warning - TM1 warning level T>",
+            "addr": "ns=2;i=246;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - TM1 ���� T>"
+        },
+        {
+            "index": 109,
+            "description": "Warning - Thermistor open circuit",
+            "addr": "ns=2;i=245;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �������迪·"
+        },
+        {
+            "index": 110,
+            "description": "Warning - Thermistor short circuit",
+            "addr": "ns=2;i=244;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���������·"
+        },
+        {
+            "index": 111,
+            "description": "Warning - Thermistor trip level",
+            "addr": "ns=2;i=243;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �����������"
+        },
+        {
+            "index": 112,
+            "description": "Warning - External ground fault",
+            "addr": "ns=2;i=241;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ⲿ�ӵع���"
+        },
+        {
+            "index": 113,
+            "description": "Warning - Internal ground fault",
+            "addr": "ns=2;i=240;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �ڲ��ӵع���"
+        },
+        {
+            "index": 114,
+            "description": "Warning - Overload + loss of phase",
+            "addr": "ns=2;i=239;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ���� + �����"
+        },
+        {
+            "index": 115,
+            "description": "Warning - Overload",
+            "addr": "ns=2;i=238;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����"
+        },
+        {
+            "index": 116,
+            "description": "Warning - Unbalance",
+            "addr": "ns=2;i=237;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - �಻ƽ��"
+        },
+        {
+            "index": 117,
+            "description": "Warning - Prewarning overload (I>115%Is)",
+            "addr": "ns=2;i=236;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "���� - ����Ԥ��"
+        },
+        {
+            "index": 118,
+            "description": "Event - Initialization module identification data write-protected",
+            "addr": "ns=2;i=235;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ��ʶ������д����"
+        },
+        {
+            "index": 119,
+            "description": "Event - Initialization module write-protected",
+            "addr": "ns=2;i=234;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ��д����"
+        },
+        {
+            "index": 120,
+            "description": "Event - Memory module write-protected",
+            "addr": "ns=2;i=233;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �洢ģ��д����"
+        },
+        {
+            "index": 121,
+            "description": "Event - Initialization Module write protected, parameter changes not allowed",
+            "addr": "ns=2;i=232;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ��д�������������ı����"
+        },
+        {
+            "index": 122,
+            "description": "Event - DM-F incorrect PROFIsafe address or incorrect PROFIsafe parameter",
+            "addr": "ns=2;i=231;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F LOCAL PROFIsafe��ַ����ȷ��PROFIsafe��������ȷ"
+        },
+        {
+            "index": 123,
+            "description": "Event - DM-F LOCAL waiting for start-up test",
+            "addr": "ns=2;i=230;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F LOCAL�ȴ��𶯲���"
+        },
+        {
+            "index": 124,
+            "description": "Event - DM-F LOCAL - actual configuration and desired configuration different",
+            "addr": "ns=2;i=229;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F LOCAL - ʵ�����ú�Ŀ�����ò�ͬ"
+        },
+        {
+            "index": 125,
+            "description": "Event - DM-F LOCAL configuration mode",
+            "addr": "ns=2;i=228;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F LOCAL����ģʽ"
+        },
+        {
+            "index": 126,
+            "description": "Event - Prm error number",
+            "addr": "ns=2;i=220;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ������Ŵ���"
+        },
+        {
+            "index": 127,
+            "description": "Event - Parameter setting active",
+            "addr": "ns=2;i=219;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �����趨��Ч"
+        },
+        {
+            "index": 128,
+            "description": "Event - Factory settings",
+            "addr": "ns=2;i=218;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��������"
+        },
+        {
+            "index": 129,
+            "description": "Event - Password protection active",
+            "addr": "ns=2;i=217;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���뱣����Ч"
+        },
+        {
+            "index": 130,
+            "description": "Event - Wrong password",
+            "addr": "ns=2;i=216;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �������"
+        },
+        {
+            "index": 131,
+            "description": "Event - Wrong parameter",
+            "addr": "ns=2;i=215;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��������"
+        },
+        {
+            "index": 132,
+            "description": "Event - Device does not support the required functions",
+            "addr": "ns=2;i=214;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �豸��֧�����蹦��"
+        },
+        {
+            "index": 133,
+            "description": "Event - Parameter changes not allowed in the current operating state",
+            "addr": "ns=2;i=213;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ǰ����״̬�²��������Ĳ���"
+        },
+        {
+            "index": 134,
+            "description": "Event - Parameter blocking during start-up active",
+            "addr": "ns=2;i=212;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���������в���������"
+        },
+        {
+            "index": 135,
+            "description": "Event - Initialization module cleared",
+            "addr": "ns=2;i=210;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ����ɾ��"
+        },
+        {
+            "index": 136,
+            "description": "Event - Initialization module programmed",
+            "addr": "ns=2;i=209;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ���ѱ��"
+        },
+        {
+            "index": 137,
+            "description": "Event - Initialization module read in",
+            "addr": "ns=2;i=208;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ʼ��ģ�����"
+        },
+        {
+            "index": 138,
+            "description": "Event - Memory module cleared",
+            "addr": "ns=2;i=206;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �洢ģ����ɾ��"
+        },
+        {
+            "index": 139,
+            "description": "Event - Memory module programmed",
+            "addr": "ns=2;i=205;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �洢ģ���ѱ��"
+        },
+        {
+            "index": 140,
+            "description": "Event - Memory module read in",
+            "addr": "ns=2;i=204;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �洢ģ�����"
+        },
+        {
+            "index": 141,
+            "description": "Event - No module voltage",
+            "addr": "ns=2;i=202;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ģ���ѹ"
+        },
+        {
+            "index": 142,
+            "description": "Event - Module not supported",
+            "addr": "ns=2;i=201;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ģ�鲻��֧��"
+        },
+        {
+            "index": 143,
+            "description": "Event - Configured operation panel missing",
+            "addr": "ns=2;i=200;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ����̬�Ĳ���Ա���δ����"
+        },
+        {
+            "index": 144,
+            "description": "Event - DM-F PROFIsafe active",
+            "addr": "ns=2;i=199;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F PROFIsafe ��Ч"
+        },
+        {
+            "index": 145,
+            "description": "Event - DM-F LOCAL o.k.",
+            "addr": "ns=2;i=198;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F LOCAL����"
+        },
+        {
+            "index": 146,
+            "description": "Event - Time synchronized (NTP)",
+            "addr": "ns=2;i=197;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ʱ���ͬ��"
+        },
+        {
+            "index": 147,
+            "description": "Event - Time set (NTP)",
+            "addr": "ns=2;i=195;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ʱ����趨"
+        },
+        {
+            "index": 148,
+            "description": "Event - Monitoring interval for mandatory testing - test required",
+            "addr": "ns=2;i=194;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ǿ�Ʋ��Եļ��Ӽ��-��Ҫ����"
+        },
+        {
+            "index": 149,
+            "description": "Event - DM-F safety-related tripping",
+            "addr": "ns=2;i=193;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - DM-F��ȫ�ѿ�"
+        },
+        {
+            "index": 150,
+            "description": "Event - AM1 open circuit",
+            "addr": "ns=2;i=192;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM1 ��·"
+        },
+        {
+            "index": 151,
+            "description": "Event - Module-FW update active",
+            "addr": "ns=2;i=191;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �̼�������Ч"
+        },
+        {
+            "index": 152,
+            "description": "Event - External fault 6",
+            "addr": "ns=2;i=189;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 6"
+        },
+        {
+            "index": 153,
+            "description": "Event - External fault 5",
+            "addr": "ns=2;i=188;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 5"
+        },
+        {
+            "index": 154,
+            "description": "Event - External fault 4",
+            "addr": "ns=2;i=187;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 4"
+        },
+        {
+            "index": 155,
+            "description": "Event - External fault 3",
+            "addr": "ns=2;i=186;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 3"
+        },
+        {
+            "index": 156,
+            "description": "Event - External fault 2",
+            "addr": "ns=2;i=185;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 2"
+        },
+        {
+            "index": 157,
+            "description": "Event - External fault 1",
+            "addr": "ns=2;i=184;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ���� 1"
+        },
+        {
+            "index": 158,
+            "description": "Event - Limit monitor 4",
+            "addr": "ns=2;i=183;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 4"
+        },
+        {
+            "index": 159,
+            "description": "Event - Limit monitor 3",
+            "addr": "ns=2;i=182;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 3"
+        },
+        {
+            "index": 160,
+            "description": "Event - Limit monitor 2",
+            "addr": "ns=2;i=181;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 2"
+        },
+        {
+            "index": 161,
+            "description": "Event - Limit monitor 1",
+            "addr": "ns=2;i=180;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ֵ 1"
+        },
+        {
+            "index": 162,
+            "description": "Event - Motor stop time >",
+            "addr": "ns=2;i=179;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���ֹͣʱ�� >"
+        },
+        {
+            "index": 163,
+            "description": "Event - Motor operating hours >",
+            "addr": "ns=2;i=178;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �����תʱ�� >"
+        },
+        {
+            "index": 164,
+            "description": "Event - Just one start possible",
+            "addr": "ns=2;i=177;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ������һ����"
+        },
+        {
+            "index": 165,
+            "description": "Event - No. of starts>",
+            "addr": "ns=2;i=176;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �𶯴��� >"
+        },
+        {
+            "index": 166,
+            "description": "Event - No start possible",
+            "addr": "ns=2;i=175;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��������"
+        },
+        {
+            "index": 167,
+            "description": "Event - Warning Internal ground fault",
+            "addr": "ns=2;i=173;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ڲ��ӵع��Ͼ���"
+        },
+        {
+            "index": 168,
+            "description": "Event - Stalled rotor",
+            "addr": "ns=2;i=172;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ��ת"
+        },
+        {
+            "index": 169,
+            "description": "Event - AM1 trip level 0/4-20mA<",
+            "addr": "ns=2;i=171;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM1 �ѿ� 0/4 - 20 mA<"
+        },
+        {
+            "index": 170,
+            "description": "Event - AM1 trip level 0/4-20mA>",
+            "addr": "ns=2;i=170;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM1 �ѿ� 0/4 - 20 mA>"
+        },
+        {
+            "index": 171,
+            "description": "Event - Trip level U<",
+            "addr": "ns=2;i=169;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� U<"
+        },
+        {
+            "index": 172,
+            "description": "Event - Trip level cos phi<",
+            "addr": "ns=2;i=168;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� cos �� <"
+        },
+        {
+            "index": 173,
+            "description": "Event - Trip level P<",
+            "addr": "ns=2;i=167;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� P<"
+        },
+        {
+            "index": 174,
+            "description": "Event - Trip level P>",
+            "addr": "ns=2;i=166;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� P>"
+        },
+        {
+            "index": 175,
+            "description": "Event - Trip level I<",
+            "addr": "ns=2;i=165;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� I<"
+        },
+        {
+            "index": 176,
+            "description": "Event - Trip level I>",
+            "addr": "ns=2;i=164;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ѿ� I>"
+        },
+        {
+            "index": 177,
+            "description": "Event - AM1 warning level 0/4-20mA<",
+            "addr": "ns=2;i=163;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM1 ���� 0/4 - 20 mA<"
+        },
+        {
+            "index": 178,
+            "description": "Event - AM1 warning level 0/4-20mA>",
+            "addr": "ns=2;i=162;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - AM1 ���� 0/4 - 20 mA>"
+        },
+        {
+            "index": 179,
+            "description": "Event - Warning level U<",
+            "addr": "ns=2;i=161;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� U<"
+        },
+        {
+            "index": 180,
+            "description": "Event - Warning level cos phi<",
+            "addr": "ns=2;i=160;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� cos �� <"
+        },
+        {
+            "index": 181,
+            "description": "Event - Warning level P<",
+            "addr": "ns=2;i=159;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� P<"
+        },
+        {
+            "index": 182,
+            "description": "Event - Warning level P>",
+            "addr": "ns=2;i=158;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� P>"
+        },
+        {
+            "index": 183,
+            "description": "Event - Warning level I<",
+            "addr": "ns=2;i=157;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� I<"
+        },
+        {
+            "index": 184,
+            "description": "Event - Warning level I>",
+            "addr": "ns=2;i=156;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� I>"
+        },
+        {
+            "index": 185,
+            "description": "Event - EM Short Circuit",
+            "addr": "ns=2;i=155;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - EM ��·"
+        },
+        {
+            "index": 186,
+            "description": "Event - EM Open Circuit",
+            "addr": "ns=2;i=154;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - EM ��·"
+        },
+        {
+            "index": 187,
+            "description": "Event - TM1 out of range",
+            "addr": "ns=2;i=153;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM1 ������"
+        },
+        {
+            "index": 188,
+            "description": "Event - TM1 sensor fault",
+            "addr": "ns=2;i=152;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM1 ����������"
+        },
+        {
+            "index": 189,
+            "description": "Event - TM1 trip level T>",
+            "addr": "ns=2;i=151;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM1 �ѿ� T>"
+        },
+        {
+            "index": 190,
+            "description": "Event - TM1 warning level T>",
+            "addr": "ns=2;i=150;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - TM1 ���� T>"
+        },
+        {
+            "index": 191,
+            "description": "Event - Thermistor open circuit",
+            "addr": "ns=2;i=149;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �������迪·"
+        },
+        {
+            "index": 192,
+            "description": "Event - Thermistor short circuit",
+            "addr": "ns=2;i=148;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���������·"
+        },
+        {
+            "index": 193,
+            "description": "Event - Thermistor trip level",
+            "addr": "ns=2;i=147;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �����������"
+        },
+        {
+            "index": 194,
+            "description": "Event - Warning external ground fault",
+            "addr": "ns=2;i=146;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ�ӵع��Ͼ���"
+        },
+        {
+            "index": 195,
+            "description": "Event - External Ground Fault",
+            "addr": "ns=2;i=145;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ⲿ�ӵع���"
+        },
+        {
+            "index": 196,
+            "description": "Event - Internal ground fault",
+            "addr": "ns=2;i=144;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �ڲ��ӵع���"
+        },
+        {
+            "index": 197,
+            "description": "Event - Overload + loss of phase",
+            "addr": "ns=2;i=143;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ���� + �����"
+        },
+        {
+            "index": 198,
+            "description": "Event - Overload",
+            "addr": "ns=2;i=142;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ����"
+        },
+        {
+            "index": 199,
+            "description": "Event - Unbalance",
+            "addr": "ns=2;i=141;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - �಻ƽ��"
+        },
+        {
+            "index": 200,
+            "description": "Event - Prewarning overload (I>115%Is)",
+            "addr": "ns=2;i=140;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "�¼� - ����Ԥ��"
+        },
+        {
+            "index": 201,
+            "description": "Status - On >>",
+            "addr": "ns=2;i=120;",
+            "unit": "-",
+            "datatype": "Boolean",
+            "cn": "״̬ - ON >>"
+        },
+        {
+            "index": 202,
+            "description": "Status - On >",
+            "addr": "ns=2;i=119;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "״̬ - ON >"
+        },
+        {
+            "index": 203,
+            "description": "Status - Off",
+            "addr": "ns=2;i=118;",
+            "unit": "-",
+            "datatype": "Boolean",
+            "cn": "״̬ - OFF"
+        },
+        {
+            "index": 204,
+            "description": "Status - On <",
+            "addr": "ns=2;i=117;",
+            "unit": "-",
+            "datatype": "Boolean",
+            "cn": "״̬ - ON <"
+        },
+        {
+            "index": 205,
+            "description": "Status - On<<",
+            "addr": "ns=2;i=116;",
+            "unit": "",
+            "datatype": "Boolean",
+            "cn": "״̬ - ON <<"
+        },
+        {
+            "index": 206,
+            "description": "Status - General warning",
+            "addr": "ns=2;i=109;",
+            "unit": "-",
+            "datatype": "Boolean",
+            "cn": "���淢��"
+        },
+        {
+            "index": 207,
+            "description": "Status - General fault",
+            "addr": "ns=2;i=108;",
+            "unit": "-",
+            "datatype": "Boolean",
+            "cn": "���Ϸ���"
+        },
+        {
+            "index": 208,
+            "description": "Number of starts",
+            "addr": "ns=2;i=89;",
+            "unit": "#",
+            "datatype": "Unsigned Dword",
+            "cn": "�𶯴���"
+        },
+        {
+            "index": 209,
+            "description": "Motor operating hours",
+            "addr": "ns=2;i=86;",
+            "unit": "1 s",
+            "datatype": "Unsigned Dword",
+            "cn": "�������ʱ��"
+        },
+        {
+            "index": 210,
+            "description": "Int. number of overload trips",
+            "addr": "ns=2;i=74;",
+            "unit": "",
+            "datatype": "Unsigned word",
+            "cn": "�ܼƹ����ѿ۴���"
+        },
+        {
+            "index": 211,
+            "description": "Number of overload trips",
+            "addr": "ns=2;i=73;",
+            "unit": "",
+            "datatype": "Unsigned word",
+            "cn": "�����ѿ۴���"
+        },
+        {
+            "index": 212,
+            "description": "Max. current I_max",
+            "addr": "ns=2;i=33;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "��������Imax%"
+        },
+        {
+            "index": 213,
+            "description": "Consumed energy",
+            "addr": "ns=2;i=92;",
+            "unit": "1 kWh",
+            "datatype": "Unsigned Dword",
+            "cn": "�ܺ�"
+        },
+        {
+            "index": 214,
+            "description": "Active power P",
+            "addr": "ns=2;i=69;",
+            "unit": "1 W",
+            "datatype": "Float",
+            "cn": "�й�����"
+        },
+        {
+            "index": 215,
+            "description": "Apparent power S",
+            "addr": "ns=2;i=52;",
+            "unit": "1 VA",
+            "datatype": "Unsigned Dword",
+            "cn": "���ڹ���"
+        },
+        {
+            "index": 216,
+            "description": "Active power P",
+            "addr": "ns=2;i=51;",
+            "unit": "1 W",
+            "datatype": "Unsigned Dword",
+            "cn": "�й�����"
+        },
+        {
+            "index": 217,
+            "description": "Current I_L3",
+            "addr": "ns=2;i=68;",
+            "unit": "1 A",
+            "datatype": "Float",
+            "cn": "�����IL3"
+        },
+        {
+            "index": 218,
+            "description": "Current I_L2",
+            "addr": "ns=2;i=67;",
+            "unit": "1 A",
+            "datatype": "Float",
+            "cn": "�����IL2"
+        },
+        {
+            "index": 219,
+            "description": "Current I_L1",
+            "addr": "ns=2;i=66;",
+            "unit": "1 A",
+            "datatype": "Float",
+            "cn": "�����IL1"
+        },
+        {
+            "index": 220,
+            "description": "Average current I_avg",
+            "addr": "ns=2;i=65;",
+            "unit": "1 A",
+            "datatype": "Float",
+            "cn": "ƽ�������Iavg"
+        },
+        {
+            "index": 221,
+            "description": "Max. Current I_max",
+            "addr": "ns=2;i=64;",
+            "unit": "1 A",
+            "datatype": "Float",
+            "cn": "��������Imax"
+        },
+        {
+            "index": 222,
+            "description": "Frequency",
+            "addr": "ns=2;i=63;",
+            "unit": "0.01 Hz",
+            "datatype": "Unsigned word",
+            "cn": "��ѹƵ��"
+        },
+        {
+            "index": 223,
+            "description": "Phase voltage UL3-N",
+            "addr": "ns=2;i=42;",
+            "unit": "1 V",
+            "datatype": "Unsigned word",
+            "cn": "���ѹUL3"
+        },
+        {
+            "index": 224,
+            "description": "Phase voltage UL2-N",
+            "addr": "ns=2;i=41;",
+            "unit": "1 V",
+            "datatype": "Unsigned word",
+            "cn": "���ѹUL2"
+        },
+        {
+            "index": 225,
+            "description": "Phase voltage UL1-N",
+            "addr": "ns=2;i=40;",
+            "unit": "1 V",
+            "datatype": "Unsigned word",
+            "cn": "���ѹUL1"
+        },
+        {
+            "index": 226,
+            "description": "Current I_L3",
+            "addr": "ns=2;i=36;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "�����IL3%"
+        },
+        {
+            "index": 227,
+            "description": "Current I_L2",
+            "addr": "ns=2;i=35;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "�����IL2%"
+        },
+        {
+            "index": 228,
+            "description": "Current I_L1",
+            "addr": "ns=2;i=34;",
+            "unit": "1 % / Is",
+            "datatype": "Unsigned word",
+            "cn": "�����IL1%"
+        },
+        {
+            "index": 229,
+            "description": "Cos phi",
+            "addr": "ns=2;i=32;",
+            "unit": "0.01",
+            "datatype": "Unsigned byte",
+            "cn": "��������"
+        }
+    ]
+}
