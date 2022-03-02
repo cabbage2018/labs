@@ -1,10 +1,9 @@
-
 {
   "name": "labs",
   "email": "mindspherebasic@126.com",
   "version": "22.08.04",
   "private": true,
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/cabbage2018/labs.git"
   },
@@ -21,10 +20,8 @@
     "stage": "cross-env NODE_ENV=stage pm2 --no-daemon start ./bin/www --watch ",
     "test": "mocha --max_old_space_size=90000 ./test/**/*.js --timeout 15000"
   },
-
   "bin": "bin/www",
   "main": "bin/www",
-  
   "pkg": {
     "scripts": "routes/**/*.js",
     "assets": [
@@ -56,7 +53,8 @@
   },
   "https_proxy": "http://'tenantuser':'123Abc!@#'@19.0.2.235:8083",
   "dependencies": {
-
+    "markdown-js": "~0.0.1",
+    "gray-matter": "*",
     "uuid": "~8.3.2",
     "net": "~1.0.2",
     "jsmodbus": "^4.0.6",
@@ -75,4 +73,3 @@
     "morgan": "~1.9.1"
   }
 }
-
