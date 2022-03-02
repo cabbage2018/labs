@@ -20,8 +20,6 @@ var app = express();
 // 未使用sign的cookie，使用req.cookies.cookieName获取
 app.use(cookieParser("cookieSignKey"));
 
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

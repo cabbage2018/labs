@@ -6,73 +6,10 @@
   "private": true,
     "repository": {
     "type": "git",
-    "url": "https://github.com/cabbage2018/megatron.git"
+    "url": "https://github.com/cabbage2018/labs.git"
   },
   "engines": {
-    "node": ">=0.10 <=14"
-  },
-  "scripts": {
-    "start": "node bin/www",
-    "pm2": "pm2 start bin/www",
-    "pm2-stop": "pm2 stop all",
-    "build": "set NODE_ENV=production",
-    "pkg": "pkg ./bin/www  -t win --out-path=dist/",
-    "test": "mocha --max_old_space_size=90000 ./test/**/*.js --timeout 15000"
-  },
-  "bin": "bin/www",
-  "main": "bin/www",
-  "pkg": {
-    "scripts": "routes/*.js",
-    "assets": [
-      "public/**/*",
-      "views/**"
-    ],
-    "targets": [
-      "node8-windows-x64"
-    ],
-    "outputPath": "pkg/"
-  },
-  "author": "fungi0",  "scripts": {
-    "start": "node ./bin/www",
-    "pkg": "pkg ./bin/www  -t win --out-path=dist/",
-    "test": "mocha --max_old_space_size=90000 ./test/**/*.js --timeout 15000"
-  },
-  "bin": "./bin/www",
-  "main": "./bin/www",
-  "pkg": {
-    "scripts": "routes/**/*.js",
-    "assets": [
-      "public/**/*",
-      "views/**/*"
-    ],
-    "targets": [
-      "node8-win-x64"
-    ],
-    "outputPath": "pkg/"
-  },
-  "author": "fungi0",
-  "devDependencies": {},
-  "https_proxy": "http://'tenantuser':'123Abc!@#'@19.0.2.235:8083",
-  "dependencies": {
-    "log4js": "~6.3.0",
-    "node-opcua": "~2.47.0",
-    "ejs": "~2.6.1",
-    "cookie-parser": "~1.4.5",
-    "express": "~4.16.1",
-    "http-errors": "~1.8.0",
-    "morgan": "~1.9.1"
-  }
-  
-  "keywords": [
-    "pubsub",
-    "redis"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cabbage2018/megatron.git"
-  },
-  "engines": {
-    "node": ">=0.10 <=14"
+    "node": ">=0.80 <=10"
   },
   "scripts": {
     "start": "node ./bin/www",
@@ -84,13 +21,16 @@
     "stage": "cross-env NODE_ENV=stage pm2 --no-daemon start ./bin/www --watch ",
     "test": "mocha --max_old_space_size=90000 ./test/**/*.js --timeout 15000"
   },
+
   "bin": "bin/www",
   "main": "bin/www",
+  
   "pkg": {
     "scripts": "routes/**/*.js",
     "assets": [
       "public/**/*",
-      "views/**"
+      "views/**/*",
+      "views/*"
     ],
     "targets": [
       "node8-windows-x64"
@@ -98,6 +38,10 @@
     "outputPath": "pkg/"
   },
   "author": "fungi0",
+  "keywords": [
+    "pubsub",
+    "redis"
+  ],
   "devDependencies": {
     "supertest": "~6.1.0",
     "superagent": "~6.1.0",
@@ -112,6 +56,7 @@
   },
   "https_proxy": "http://'tenantuser':'123Abc!@#'@19.0.2.235:8083",
   "dependencies": {
+
     "uuid": "~8.3.2",
     "net": "~1.0.2",
     "jsmodbus": "^4.0.6",
