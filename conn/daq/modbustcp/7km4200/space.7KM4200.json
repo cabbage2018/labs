@@ -1,0 +1,68 @@
+[
+    {
+        "functioncode": 3,
+        "category": "Measured variables of the SENTRON PAC Power Monitoring Device",
+        "register": 1,
+        "quantity": 127,
+        "stop": 127,
+        "flash": [
+            65534,
+            0
+        ]
+    },
+    {
+        "functioncode": 3,
+        "category": "Tariff",
+        "register": 801,
+        "quantity": 37,
+        "stop": 837,
+        "flash": [
+            65534,
+            0
+        ]
+    },
+    {
+        "functioncode": 2,
+        "category": "Input status and output status of the",
+        "register": 1,
+        "quantity": 3,
+        "stop": 3,
+        "flash": [
+            65534,
+            0
+        ]
+    },
+    {
+        "functioncode": 3,
+        "category": "Device diagnostics and device status",
+        "register": 205,
+        "quantity": 1,
+        "stop": 205,
+        "flash": [
+            65534,
+            0
+        ]
+    },
+    {
+        "functioncode": 3,
+        "category": "Modbus settings w",
+        "register": 50001,
+        "quantity": 32,
+        "stop": 50032,
+        "flash": [
+            65534,
+            0
+        ]
+    },
+    {
+        "functioncode": 3,
+        "category": "MODBUS communication parameter",
+        "register": 63001,
+        "quantity": 26,
+        "stop": 63026,
+        "flash": [
+            65534,
+            0
+        ]
+    }
+]
