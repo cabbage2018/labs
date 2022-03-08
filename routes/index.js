@@ -64,7 +64,7 @@ router.get("/modbus", async (req, res, next) => {
 
   req.protocols = require('../project/Laboratory/physical.json')
 
-  req.candidates = req.protocols.filter((entry)=>{
+  let candidates = req.protocols.filter((entry)=>{
     let matched = entry.protocol.toUpperCase().indexOf('MODBUSTCP') >= 0
     if(matched){
       res.write('<p>')
@@ -74,33 +74,37 @@ router.get("/modbus", async (req, res, next) => {
     return matched
   })
 
-  req.samples = []
-  req.candidates.forEach(e=>{
-
-    req.physicals = e
-    console.log(e)
-
-    req.samples.push(modbus.instantiate(req, res, ()=>{}))
-
+  let physicals = []
+  candidates.forEach(e=>{
+    e.array.forEach(g=>{
+      physicals.push(g)      
+      res.write('<p>')
+      res.write(JSON.stringify(g))
+      res.write('</p>')
+    })
   })
 
-  console.log(req.samples, '++++++++++++++')
-  
-  console.log(req.samples.length)
-  console.log(req.samples)
-  
-  if(req.physical && req.physical.array.length > 0){
+  req['candidates'] = physicals
 
+  res['physicals'] = []
+  modbus.instantiate(req, res, () => { })
+  console.log(res.physicals, '++++++++++++++')
+  
+  let results = []
+  if (res.physicals && res.physicals.length > 0){
     await modbus.commission(req, res, (runtimeData)=>{
       console.log(runtimeData)
       /// progressively append data
       res.write('<p>')
       res.write(JSON.stringify(runtimeData))
       res.write('</p>')
-      console.log(runtimeData.map(runtimeData.response._body._fc + '=' + runtimeData.response._body._valuesAsBuffer).join(', '))
-    })
 
+      results.push(runtimeData)
+    })
   }
+
+  // console.log(results.map(runtimeData.response._body._fc + '=' + runtimeData.response._body._valuesAsBuffer).join(', '))
+
   res.end()
 })
 

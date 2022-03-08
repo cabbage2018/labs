@@ -11,11 +11,12 @@ let {
 module.exports = {
 	
 	commission: async function(req, res, next){
-	  if(req.physical && req.physical.array && req.physical.array.length > 0){
-		for (var i = 0; i < req.physical.array.length; i++) {
-			let e = req.physical.array[i]
+	  if(res.physicals && res.physicals.length > 0){
+		for (var i = 0; i < res.physicals.length; i++) {
+			let e = res.physicals[i]
 			log.info(e)
-			res.array = []
+
+			res.resolved = []
 			await inventory.acquire(
 				e.ip,
 				e.port,
@@ -26,6 +27,7 @@ module.exports = {
 				e.timeoutMillisecond,
 				e.flash)
 				.then((responses) => {
+
 					responses.ip = e.ip
 					responses.port = e.port
 					responses.subordinatorNumber = e.subordinatorNumber
@@ -33,7 +35,7 @@ module.exports = {
 					responses.register = e.register
 					responses.quantity = e.quantity
 					
-					res.array.push(responses)
+					res.resolved.push(responses)
 					
 					next(responses)
 				})
@@ -47,40 +49,36 @@ module.exports = {
 	},
 
 	instantiate: function(req, res, next){
-		res.array = []
-		console.log(req.physicals.array, '=================================')
-		if(req.physicals && req.physicals.array){
-			for (let i = 0; i < req.physicals.array.length; i = i + 1) {
-				let addr = req.physicals.array[i]
-				
-				req.space = search(addr.model)
-				
-				console.log(addr.model, req.space , '-------------------------------------------')
-
-				for (let j = 0; j < req.space.length; j = j + 1) {
-					let sample = req.space			
-					let scramble = {
-						ip: addr.ip,
-						port: addr.port,
-						subordinatorNumber: addr.subordinatorNumber,
-						model: addr.model,
-
-						protocol: req.physical.protocol,
-						timeoutMillisecond: req.physical.timeoutMillisecond?req.physical.timeoutMillisecond:1000,
-
-						register: sample.register,
-						quantity: sample.quantity,
-						category: sample.category,
-						functioncode: sample.functioncode,
-						
-
-						flash: sample.flash? sample.flash: [0xef],
+		if(req.candidates){
+			for (let i = 0; i < req.candidates.length; i = i + 1) {
+				let addr = req.candidates[i]
+				req.serviceProvider = search(addr.model)
+				if(req.serviceProvider.space && req.serviceProvider.layout){
+					for (let j = 0; j < req.serviceProvider.space.length; j = j + 1) {
+						let sample = req.serviceProvider.space[j]
+						let scramble = {
+							ip: addr.ip,
+							port: addr.port,
+							subordinatorNumber: addr.subordinatorNumber,
+							model: addr.model,
+	
+							// protocol: req.physical.protocol,
+							timeoutMillisecond: addr.timeoutMillisecond ? addr.timeoutMillisecond:1000,
+	
+							register: sample.register,
+							quantity: sample.quantity,
+							category: sample.category,
+							functioncode: sample.functioncode,
+							
+	
+							flash: sample.flash? sample.flash: [0xef],
+						}
+						res.physicals.push(scramble)
 					}
-					res.array.push(scramble)
 				}
 			}
 		}
-		// console.log(res)
+		console.log(res.physicals)
 		return
 	  },
 	  

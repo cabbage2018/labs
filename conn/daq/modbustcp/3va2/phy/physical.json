@@ -6,7 +6,7 @@
 			"ip": "192.168.2.101",
 			"port": 502,
 			"subordinatorNumber": 127,
-			"model": "MCCB3VA2",
+			"model": "3VA2",
 			"online": false,
 			"timeoutMillisecond": 5000
 		}

@@ -1,0 +1,236 @@
+[
+    {
+        "index": 133,
+        "register": 1,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Va-n"
+    },
+    {
+        "index": 134,
+        "register": 3,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Vb-n"
+    },
+    {
+        "index": 135,
+        "register": 5,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Vc-n"
+    },
+    {
+        "index": 136,
+        "register": 7,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Va-b"
+    },
+    {
+        "index": 137,
+        "register": 9,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Vb-c"
+    },
+    {
+        "index": 138,
+        "register": 11,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "V",
+        "description": "Voltage Vc-a"
+    },
+    {
+        "index": 139,
+        "register": 13,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "A",
+        "description": "Current a"
+    },
+    {
+        "index": 140,
+        "register": 15,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "A",
+        "description": "Current b"
+    },
+    {
+        "index": 141,
+        "register": 17,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "A",
+        "description": "Current c"
+    },
+    {
+        "index": 142,
+        "register": 63,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "VA",
+        "description": "Total Apparent Power"
+    },
+    {
+        "index": 143,
+        "register": 65,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "W",
+        "description": "Total Active Power"
+    },
+    {
+        "index": 144,
+        "register": 67,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "var",
+        "description": "Total Reactive Power"
+    },
+    {
+        "index": 145,
+        "register": 69,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Float",
+        "format": "#",
+        "description": "Total Power Factor"
+    },
+    {
+        "index": 146,
+        "register": 801,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "Wh",
+        "description": "Active Energy Import Tariff 1"
+    },
+    {
+        "index": 147,
+        "register": 805,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "Wh",
+        "description": "Active Energy Import Tariff 2"
+    },
+    {
+        "index": 148,
+        "register": 809,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "Wh",
+        "description": "Active Energy Export Tariff 1"
+    },
+    {
+        "index": 149,
+        "register": 813,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "Wh",
+        "description": "Active Energy Export Tariff 2"
+    },
+    {
+        "index": 150,
+        "register": 817,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "varh",
+        "description": "Reactive Energy Import Tariff 1"
+    },
+    {
+        "index": 151,
+        "register": 821,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "varh",
+        "description": "Reactive Energy Import Tariff 2"
+    },
+    {
+        "index": 152,
+        "register": 825,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "varh",
+        "description": "Reactive Energy Export Tariff 1"
+    },
+    {
+        "index": 153,
+        "register": 829,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "varh",
+        "description": "Reactive Energy Export Tariff 2"
+    },
+    {
+        "index": 154,
+        "register": 833,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "VAh",
+        "description": "Apparent Energy Tariff 1"
+    },
+    {
+        "index": 155,
+        "register": 837,
+        "quantity": 4,
+        "functioncode": 3,
+        "type": "Double",
+        "format": "VAh",
+        "description": "Apparent Energy Tariff 2"
+    },
+    {
+        "index": 156,
+        "register": 111,
+        "quantity": 1,
+        "functioncode": 2,
+        "type": "Bit",
+        "format": "#",
+        "description": "Restart of the device"
+    },
+    {
+        "index": 157,
+        "register": 50001,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "unsigned long",
+        "format": "#",
+        "description": "Connection type"
+    },
+    {
+        "index": 158,
+        "register": 63001,
+        "quantity": 2,
+        "functioncode": 3,
+        "type": "Hex",
+        "format": "#",
+        "description": "IP address"
+    }
+]

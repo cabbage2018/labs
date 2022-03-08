@@ -48,15 +48,15 @@ async function acquire(ip, port, sub, fc, register, count, timeout, outputs) {
 		throw new Error('Wrong outputs count')
 	}
 	const ms = (timeout > 60000 || timeout < 0) ? 3000 : timeout
-	// let entry = {
-	// 	ip: ip,
-	// 	port: port,
-	// 	slave: sub,
-	// 	fc: fc,
-	// 	reg: register,
-	// 	count: count,
-	// 	timeout: ms
-	// }
+	let entry = {
+		ip: ip,
+		port: port,
+		slave: sub,
+		fc: fc,
+		reg: register,
+		count: count,
+		timeout: ms
+	}
 	let promisePhysicalLayer = new Promise(function (resolve, reject) {
 		const socket = new net.Socket();
 		const client = new modbus.client.TCP(socket, sub, ms)
