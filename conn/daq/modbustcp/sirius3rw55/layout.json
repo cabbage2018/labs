@@ -1,0 +1,20 @@
+[
+    {
+        "x": 26003,
+        "abstrct": "3.9.3 Modbus measured variables with the function codes 0x03 and 0x04",
+        "r": 1,
+        "c": 2,
+        "f": 3,
+        "type": "Float",
+        "d": "Voltage Va-n"
+    },
+    {
+        "x": 26004,
+        "abstrct": "3.9.3 Modbus measured variables with the function codes 0x03 and 0x04",
+        "r": 3,
+        "c": 2,
+        "f": 3,
+        "type": "Float",
+        "d": "Voltage Vb-n"
+    }
+]

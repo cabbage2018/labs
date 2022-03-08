@@ -11,8 +11,7 @@ var md = require("markdown-it")();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('page/index', { title: 'Express' });
-  res.send('<p><a href="./blog">My blog</a></p>')
+  res.write('<p><a href="./blog">My blog</a></p>')
   res.end()
 });
 
@@ -55,4 +54,66 @@ router.get("/blog/:article", (req, res, next)  => {
     image: files.data.image
   });
 });
-module.exports = router;
+
+/*
+  MODBUSTCP FUNCTIONS
+*/
+router.get("/modbus", async (req, res, next) => {
+  
+  let modbus = require('../conn/daq/modbustcp')
+
+  req.protocols = require('../project/Laboratory/physical.json')
+
+  req.candidates = req.protocols.filter((entry)=>{
+    let matched = entry.protocol.toUpperCase().indexOf('MODBUSTCP') >= 0
+    if(matched){
+      res.write('<p>')
+      res.write(JSON.stringify(entry))
+      res.write('</p>')
+      }
+    return matched
+  })
+
+  req.samples = []
+  req.candidates.forEach(e=>{
+
+    req.physicals = e
+    console.log(e)
+
+    req.samples.push(modbus.instantiate(req, res, ()=>{}))
+
+  })
+
+  console.log(req.samples, '++++++++++++++')
+  
+  console.log(req.samples.length)
+  console.log(req.samples)
+  
+  if(req.physical && req.physical.array.length > 0){
+
+    await modbus.commission(req, res, (runtimeData)=>{
+      console.log(runtimeData)
+      /// progressively append data
+      res.write('<p>')
+      res.write(JSON.stringify(runtimeData))
+      res.write('</p>')
+      console.log(runtimeData.map(runtimeData.response._body._fc + '=' + runtimeData.response._body._valuesAsBuffer).join(', '))
+    })
+
+  }
+  res.end()
+})
+
+/*
+  MODBUSRTU FUNCTIONS(RTU OVER TCP LIKE SENTRON4200 BRIDGE)
+*/
+
+/*
+  OPCUA FUNCTIONS
+*/
+
+/*
+  SNAP7 FUNCTIONS
+*/
+
+module.exports = router

@@ -21,6 +21,8 @@ let net = require('net')
 
 async function acquire(ip, port, sub, fc, register, count, timeout, outputs) {
 
+	console.log(typeof (ip))
+	
 	if (typeof (ip) !== 'string') {
 		throw new Error('Wrong IP')
 	}
