@@ -4,23 +4,23 @@ let fs = require('fs')
 const log4js = require('log4js')
 const log = log4js.getLogger('conn::daq::modbustcp:configure')
 
-function removeSymbol(inputString){
+function removeSymbol(inputString) {
 	log.debug(inputString)
 	let purified = inputString.replace(/[-_:./\\]/gi, "")
 	log.debug(purified)
 	return purified
 }
 
-function deserialize (jsonFilepath){
+function deserialize(jsonFilepath) {
 	let array = []
-	if(fs.existsSync(jsonFilepath)){
-		console.log(`You discovering modbus physical channels in: ${__dirname}`)	
+	if (fs.existsSync(jsonFilepath)) {
+		console.log(`You discovering modbus physical channels in: ${__dirname}`)
 
 		let o = JSON.parse(fs.readFileSync(jsonFilepath))
-		for(let i = 0; i < o.length; i = i + 1){
+		for (let i = 0; i < o.length; i = i + 1) {
 			array.push(o[i])
 		}
-	} 
+	}
 	return array
 }
 
@@ -30,17 +30,17 @@ function serialize(jsonArray) {
 /* 
 	modeled physical device
 */
-function prepareModel(rootdir){
+function prepareModel(rootdir) {
 	var dirs = fs.readdirSync(rootdir, { encoding: 'utf-8' })
 	let a = new Map()
 	for (var i = 0; i < dirs.length; i++) {
 		let path2 = path.join(rootdir, dirs[i])
-		var fileStat = fs.statSync(path2)		
+		var fileStat = fs.statSync(path2)
 		if (fileStat.isDirectory()) {
 			let serviceProvider = {}
 			serviceProvider.layout = layout(path2)
 
-			if(serviceProvider.layout){
+			if (serviceProvider.layout) {
 				serviceProvider.space = space(path2)
 				a.set(dirs[i].toUpperCase(), serviceProvider)
 			}
@@ -51,15 +51,22 @@ function prepareModel(rootdir){
 	return a
 }
 
+function load() {
+
+}
+function save() {
+
+}
+
 /*
 	there are two kinds of space->>
 	named or structed:
 		We have worked on that one like 3WL 3VA2, 7SJ686 etc.,
 */
-function search(modelName){
+function search(modelName) {
 	let knownModels = new Map()
 	knownModels = prepareModel(__dirname)
-	if(knownModels.get(modelName.toUpperCase())){
+	if (knownModels.get(modelName.toUpperCase())) {
 		return knownModels.get(modelName.toUpperCase())
 	}
 	return undefined
@@ -102,13 +109,13 @@ function space(dir) {
 function bootstrap() {
 	let knownModels = new Map()
 	knownModels = prepareModel(__dirname)
-	let addr = deserialize(path.join(__dirname, './remote.json'))	
+	let addr = deserialize(path.join(__dirname, './remote.json'))
 	let arr = []
 	for (let i = 0; i < addr.length; i = i + 1) {
 		let sample = addr[i]
 		// console.log(`${addr.length}, ${i}`)
 		let scramble = undefined
-		if(sample && sample.model && knownModels.get(sample.model.toUpperCase())){
+		if (sample && sample.model && knownModels.get(sample.model.toUpperCase())) {
 			let model1 = knownModels.get(sample.model.toUpperCase())
 			for (let j = 0; j < model1.array.length; j = j + 1) {
 				let space = model1.array[i]
@@ -128,7 +135,7 @@ function bootstrap() {
 					flash: space.flash,
 				}
 			}
-		}else{
+		} else {
 			scramble = {
 				description: "Uniform-NO-model device, SI China MAC Connectivity Labs@SLC",
 				ip: sample.ip,
