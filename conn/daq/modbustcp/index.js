@@ -6,101 +6,22 @@ let {
 	// array,
 	bootstrap,
 	serialize,
-	search,
+	lookup,
 } = require('./configure')
+function load() {
+
+}
+function save() { }
+
 module.exports = {
-	
-	commission: async function(req, res, next){
-	  if(res.physicals && res.physicals.length > 0){
-		for (var i = 0; i < res.physicals.length; i++) {
-			let e = res.physicals[i]
-			log.info(e)
 
-			res.resolved = []
-			await inventory.acquire(
-				e.ip,
-				e.port,
-				e.subordinatorNumber,
-				e.functioncode,
-				e.register,
-				e.quantity,
-				e.timeoutMillisecond,
-				e.flash)
-				.then((responses) => {
+	commission: async function (req, res, next) {
+		if (res.physicals && res.physicals.length > 0) {
+			for (var i = 0; i < res.physicals.length; i++) {
+				let e = res.physicals[i]
+				log.info(e)
 
-					responses.ip = e.ip
-					responses.port = e.port
-					responses.subordinatorNumber = e.subordinatorNumber
-					responses.functioncode = e.functioncode
-					responses.register = e.register
-					responses.quantity = e.quantity
-					
-					res.resolved.push(responses)
-					
-					next(responses)
-				})
-				.catch((error) => {
-					next(error)
-					log.error(error)
-				})
-		}
-	  }
-	  return
-	},
-
-	instantiate: function(req, res, next){
-		if(req.candidates){
-			for (let i = 0; i < req.candidates.length; i = i + 1) {
-				let addr = req.candidates[i]
-				req.serviceProvider = search(addr.model)
-				if(req.serviceProvider.space && req.serviceProvider.layout){
-					for (let j = 0; j < req.serviceProvider.space.length; j = j + 1) {
-						let sample = req.serviceProvider.space[j]
-						let scramble = {
-							ip: addr.ip,
-							port: addr.port,
-							subordinatorNumber: addr.subordinatorNumber,
-							model: addr.model,
-	
-							// protocol: req.physical.protocol,
-							timeoutMillisecond: addr.timeoutMillisecond ? addr.timeoutMillisecond:1000,
-	
-							register: sample.register,
-							quantity: sample.quantity,
-							category: sample.category,
-							functioncode: sample.functioncode,
-							
-	
-							flash: sample.flash? sample.flash: [0xef],
-						}
-						res.physicals.push(scramble)
-					}
-				}
-			}
-		}
-		console.log(res.physicals)
-		return
-	  },
-	  
-	orchestrate: /**/async function(req, res, next) {
-		let datasourceUnreachable = new Map()
-		let datasourceOnline = new Map()
-
-		let array = bootstrap()
-		if(req){
-			// let's assume req is array~
-			log.trace(req)
-			let temp = req.concat(array)
-			array = temp
-		}
-		// 
-		console.log(`${array.length} physical spaces loaded`)
-
-		// query
-		for (var i = 0; i < array.length; i++) {			
-			let e = array[i]
-			// log.info(e)
-			if(e.ip && e.port && e.subordinatorNumber && e.functioncode && e.register && e.quantity && e.timeoutMillisecond){
+				res.resolved = []
 				await inventory.acquire(
 					e.ip,
 					e.port,
@@ -110,20 +31,104 @@ module.exports = {
 					e.quantity,
 					e.timeoutMillisecond,
 					e.flash)
-					.then((responses) => {						
+					.then((responses) => {
+
+						responses.ip = e.ip
+						responses.port = e.port
+						responses.subordinatorNumber = e.subordinatorNumber
+						responses.functioncode = e.functioncode
+						responses.register = e.register
+						responses.quantity = e.quantity
+
+						res.resolved.push(responses)
+
+						next(responses)
+					})
+					.catch((error) => {
+						next(error)
+						log.error(error)
+					})
+			}
+		}
+		return
+	},
+
+	instantiate: function (req, res, next) {
+		if (req.candidates) {
+			for (let i = 0; i < req.candidates.length; i = i + 1) {
+				let addr = req.candidates[i]
+				req.serviceProvider = lookup(addr.model)
+				if (req.serviceProvider.space && req.serviceProvider.layout) {
+					for (let j = 0; j < req.serviceProvider.space.length; j = j + 1) {
+						let sample = req.serviceProvider.space[j]
+						let scramble = {
+							ip: addr.ip,
+							port: addr.port,
+							subordinatorNumber: addr.subordinatorNumber,
+							model: addr.model,
+
+							// protocol: req.physical.protocol,
+							timeoutMillisecond: addr.timeoutMillisecond ? addr.timeoutMillisecond : 1000,
+
+							register: sample.register,
+							quantity: sample.quantity,
+							category: sample.category,
+							functioncode: sample.functioncode,
+
+
+							flash: sample.flash ? sample.flash : [0xef],
+						}
+						res.physicals.push(scramble)
+					}
+				}
+			}
+		}
+		console.log(res.physicals)
+		return
+	},
+
+	orchestrate: /**/async function (req, res, next) {
+		let datasourceUnreachable = new Map()
+		let datasourceOnline = new Map()
+
+		let array = bootstrap()
+		if (req) {
+			// let's assume req is array~
+			log.trace(req)
+			let temp = req.concat(array)
+			array = temp
+		}
+		// 
+		console.log(`${array.length} physical spaces loaded`)
+
+		// query
+		for (var i = 0; i < array.length; i++) {
+			let e = array[i]
+			// log.info(e)
+			if (e.ip && e.port && e.subordinatorNumber && e.functioncode && e.register && e.quantity && e.timeoutMillisecond) {
+				await inventory.acquire(
+					e.ip,
+					e.port,
+					e.subordinatorNumber,
+					e.functioncode,
+					e.register,
+					e.quantity,
+					e.timeoutMillisecond,
+					e.flash)
+					.then((responses) => {
 						// raw data claim
 						log.debug(responses)
-	
+
 						let buffer = responses.response._body._valuesAsBuffer
 						let hexstr = buffer.toString('hex')
 						hexstr['updatedAt'] = new Date(responses.metrics.receivedAt)
 						log.debug(hexstr)
-	
+
 						let list = []
-						for (let i = 0; i < responses.response._body._valuesAsBuffer.length /2; i += 2) {
-							let focused = responses.response._body._valuesAsBuffer.slice(i * 2, i*2 + 2)
-							let win = Buffer.from(focused)				
-							list.push((responses.request._body._start + i) + ':' + win.readInt16BE(0) +  '(Int16),' + win.toString('hex') + '(HEX);')
+						for (let i = 0; i < responses.response._body._valuesAsBuffer.length / 2; i += 2) {
+							let focused = responses.response._body._valuesAsBuffer.slice(i * 2, i * 2 + 2)
+							let win = Buffer.from(focused)
+							list.push((responses.request._body._start + i) + ':' + win.readInt16BE(0) + '(Int16),' + win.toString('hex') + '(HEX);')
 						}
 						res.write(`<p> ${list.length} :: ${e}</p>`)
 						// datasourceOnline.set(e , responses)
@@ -152,7 +157,7 @@ module.exports = {
 		return
 	},
 
-	updatePersistFile: function(){
+	updatePersistFile: function () {
 		let arr = []
 		for (var addrPair of datasourceOnline) {
 			arr.push(addrPair[0])

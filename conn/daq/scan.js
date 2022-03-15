@@ -4,10 +4,10 @@ let opcua = require('opcua')
 let snap7 = require('snap7')
 let startAt = new Date()
 let protocolMap = new Map()//[]
-orchestrate(array, holder, (responses)=>{console.log(responses)})
+orchestrate(array, holder, (responses) => { console.log(responses) })
 module.exports = {
 	startAt: startAt,
-	handle: function(){
+	handle: function () {
 		modbustcp.orchestrate()
 		opcua.orchestrate()
 		snap7.orchestrate()
@@ -17,23 +17,18 @@ module.exports = {
 		protocolMap.set('SNAP7', snap7.models)
 
 	},
-  
+
 	protocols: protocolMap,
 }
 function scan() {
-  if (fs.existsSync(path.join(process.cwd(), './logs/errors.trp'))) {
-    let alarmString = fs.readFileSync(path.join(process.cwd(), './logs/errors.trp'))
-    email.error(`${new Date().toISOString()} :\r\n\r\n ${alarmString} and;\r\n then this source is deleted.`)
-    fs.unlinkSync(path.join(process.cwd(), './logs/errors.trp'))
-    log.warn('deleting: ', path.join(process.cwd(), './logs/errors.trp'))
-  } else {
-    log.debug('what a nice day.')
-  }
-}
-function displayProperties(jsonObj) {
-  for (var val in jsonObj) {
-    log.warn(val + ": " + myJson[val]);//输出如:name 
-  }
+	if (fs.existsSync(path.join(process.cwd(), './logs/errors.trp'))) {
+		let alarmString = fs.readFileSync(path.join(process.cwd(), './logs/errors.trp'))
+		email.error(`${new Date().toISOString()} :\r\n\r\n ${alarmString} and;\r\n then this source is deleted.`)
+		fs.unlinkSync(path.join(process.cwd(), './logs/errors.trp'))
+		log.warn('deleting: ', path.join(process.cwd(), './logs/errors.trp'))
+	} else {
+		log.debug('what a nice day.')
+	}
 }
 //   var reg = new RegExp('address*', 'gi')
 //   var match = reg.exec(files[i])

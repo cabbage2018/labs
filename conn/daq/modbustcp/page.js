@@ -1,326 +1,273 @@
 'use strict'
 let log4js = require('log4js')
-let log = log4js.getLogger('commissioning::decode::page')
+let log = log4js.getLogger('daq::conduit::page@@commissioning')
 
-/// used to generate data, internally
-function cyclicdata(modelObject){
-	// let dictionary = new Map()
-	let array = []
-	for (let i = 0; i < modelObject.length; i += 1) {
-		if(modelObject[i].cyclicdata){
-			array.push(modelObject[i])
-			// dictionary.set(modelObject[i].cyclicdata, modelObject[i])///functioncode + '_' + modelObject[i].register + '_' + modelObject[i].quantity
-		}
-	}
-	return array
-}
+/*
+	layout
+		knowntype
+		layout->
+			knowntype
+			layout
+		
+	knowntype
+		double
+		float
+		int/long
+			enum
+		bits
+			boffset
+			blength
+			enum
+		ascii/string
+		hexstring
 
-function layoutdata(modelObject){
-	// let dictionary = new Map()
-	let array = []
-	for (let i = 0; i < modelObject.length; i += 1) {
-		if(modelObject[i].layoutdata){
-			array.push(modelObject[i])
-			// dictionary.set(modelObject[i].layout/* + '_' + modelObject[i].register*/, modelObject[i])
-		}
-	}
-	return array
-}
+*/
+function gothrough(structArray, rawResponse) {
 
-function elementdata(modelObject){
-	let array = []
-	// let dictionary = new Map()
-	for (let i = 0; i < modelObject.length; i += 1) {
+	let results = []
 
-		if(modelObject[i].elementdata){
-			let sample = {}
-			let _entry = modelObject[i]
-			sample.menu = _entry.menu
-			sample.bitcount = _entry.bitcount
+	for (let i = 0; i < structArray.array.length; i = i + 1) {
+		let sample = structArray.array[i]
 
-			///signal
-			if(_entry.signal){
-				sample.signal = _entry.signal
+		if (sample.start >= rawResponse.start && sample.stop <= rawResponse.stop) {
+			let _byteStart = rawResponse.request._body._start - sample.start
+			_byteStart *= 2
+			let _byteEndNext = rawResponse.request._body._start + rawResponse.response._body._valuesAsBuffer.length //?
+			_byteEndNext *= 2
+			_byteEndNext += 1
+
+			let focused = buffer.slice(_byteStart, _byteEndNext)
+			let cloned = Buffer.from(focused)
+
+			let targetType = sample.dataType.toUpperCase()
+
+			switch (targetType) {
+				case "LONG":
+				case "INT":
+				case "ULONG":
+				case "UINT":
+				case "CHAR":
+				case "UCHAR":
+				case "FLOAT":
+				case "DOUBLE":
+				case "BITS":
+
+					/* first expand unknown type until it's known by this machine*/
+					results.push(handleKnownType(sample, cloned))
+					break;
+
+				default:
+
+					/* then tyr parse all left decodable nodes*/
+					handleUnknownType(structArray, sample, cloned, results)
+					break;
 			}
-
-			///events
-			if(_entry.events){
-				sample.events = new Map()
-				
-				for (let j = 0; j < _entry.events.length; j += 1) {
-					sample.events.set(_entry.events[j].key, _entry.events[j])
-				}
-			}
-
-			///measure
-			if(_entry.measure){
-				sample.measure = _entry.measure
-			}
-
-			// log.fatal(sample)
-			array.push(sample)
 		}
+
 	}
-	
-	return array
 }
 
-function buildDictionaryFromArray(filepath) {
-	let rawFormatter = require(filepath)
-	let refinedModel = {}
-	refinedModel.cyclic = cyclicdata(rawFormatter)
-	refinedModel.layout = layoutdata(rawFormatter)
-	refinedModel.element = elementdata(rawFormatter)
-	
-	log.error(refinedModel)
+function handleUnknownType(structArray, sample, cloned, results) {
+	if (structArray.layout.get(sample.dataType.toUpperCase())) {
+		let finalLayout = structArray.layout.get(sample.dataType.toUpperCase())
 
-	return refinedModel;
-}
+		for (let f of finalLayout) {
+			if (f[1].dataType.toUpperCase().indexOf()) {
 
-function measure(buf, dataType) {
-	let dbuffer = Buffer.from(buf)
-	let refinedDataType = dataType.replace(/[ ,.:/\\]/gi, "")
-	let result = undefined
-	try{
-		switch (refinedDataType.toUpperCase()) {
-
-			case "LONG":
-				if(dbuffer.length < 8) {return null;} else {
-					return dbuffer.readBigUInt64BE(0)
-				}
-			break;
-
-			case "FLOAT":
-				result = dbuffer.readFloatBE(0)//LE
-			break;
-
-			case "DOUBLE":
-				result = dbuffer.readDoubleBE(0)
-				break;
-
-			case "INT":
-				result = dbuffer.readInt32BE(0)//dbuffer.readInt16BE()// 3WL's INT differs from normal understanding.
-			break;
-
-			case "UNSIGNEDCHAR":
-				result = dbuffer.readUInt8(0)
-			break;
-
-			case "SIGNEDCHAR":
-				result = dbuffer.readInt8(0)
-			break;
-
-			case "UNSIGNEDINT":
-				result = dbuffer.readUInt16BE(0)
-			break;
-
-			case "SIGNEDINT":
-				result = dbuffer.readInt16BE(0)
-			break;
-
-			case "UNSIGNEDLONG":
-				result = dbuffer.readUInt32BE(0)
-			break;
-
-			case "SIGNEDLONG":
-				result = dbuffer.readInt32BE(0)
-			break;
-
-			default:	///As 'String'
-			result = dbuffer.toString('hex')//particle.quality = 0x8000ffff
-			break;
+				let segmented = cloned.splice(_start, _stopNext)
+				let u = handleKnownType(sample, segmented)
+				results.push(u)
+			}
 		}
-	} catch(error){
-		throw new Error('PARSE MEASURE E')
-		return null;
+
+	}
+}
+
+// offset and bits both less than 32 - that is a LONG as maximum 
+function handleSignal(decodeItem, buf, result) {
+	if (decodeItem.bigOffset + decodeItem.bitCounts > 31) {
+		return
+	}
+	let interim = buf.readUInt8(0)
+	let _bytes = buf.length
+	switch (_bytes) {
+		case 1:
+			interim = buf.readUInt8(0)
+			break;
+
+		case 2:
+			interim = buf.readUInt16BE(0)
+			break;
+
+		case 4:
+			interim = buf.readUInt32BE(0)
+			break;
+
+		default:
+			///3?
+			break;
+	}
+	let binstr = interim.toString(2)
+	const s = ("00000000000000000000000000000000" + binstr)///32bit padding
+	console.log(s)
+	let padding = s.substr(-32, 32)//16 bit position
+	console.log(padding)
+	padding = s.substr(0 - (32 - _bitOffset), _bitCounts)/// -1 to -32 as start position! a gauche
+	console.log(padding)
+}
+
+function handleKnownType(sampleItem, buf) {
+	let result = {
+		start: sampleItem.start,
+		stop: sampleItem.start + sampleItem.quantity,
+		dataType: sampleItem.dataType,
+		registers: buf,
+		unit: sampleItem.unit,
+		scale: sampleItem.scale,
+	}
+
+	if (sampleItem.bitOffset && sampleItem.bitCounts) {
+		result.bitOffset = sampleItem.bitOffset
+		result.bitCounts = sampleItem.bitCounts
+	}
+
+	let refinedDataType = sampleItem.dataType.toUpperCase().replace(/[ ,.:/\\]/gi, "")
+	switch (refinedDataType) {
+		case "LONGLONG":
+			result._value = buf.readBigUInt64BE(0)
+			break;
+
+		case "LONG":
+			result._value = buf.readInt32BE(0)
+			break;
+
+		case "INT":
+			result._value = buf.readInt16BE(0)
+			break;
+
+		case "ULONG":
+			result._value = buf.readUInt32BE(0)
+			break;
+
+		case "UINT":
+			result._value = buf.readInt16BE(0)
+			break;
+
+		case "CHAR":
+			result._value = buf.readInt8BE(0)
+			break;
+
+		case "UCHAR":
+			result._value = buf.readUInt8BE(0)
+			break;
+
+		///float, as described in IEEE 754 STD.,
+
+		case "FLOAT":
+			result._value = buf.readFloatBE(0);
+			break;
+
+		case "DOUBLE":
+			result._value = buf.readDoubleBE(0);
+			break;
+
+		/// boundary check
+		case "BITS":
+			handleSignal(sampleItem, buf, result)
+			break;
+
+		default:
+			result._qualityCode = 0x8000e771
+			console.log(buf.toString()) //
+			throw new Error('Undefined decode type' + __filename)
+			break;
+	}
+
+	//function handleEnum() {}
+
+	if (result._value && typeof (result._value == 'number') && sampleItem.enumExplain) {
+		if (sampleItem.enumExplain.get('_enumKey:' + result._value)) {
+			result._enumValue = sampleItem.enumExplain.get('_enumKey:' + result._value)
+		} else {
+			result._enumValue = 'Undefined Signal'
+		}
 	}
 	return result
 }
 
-// offset and bits both less than 32
-function signal(buf, refinedOffset, bits) {
-	let dbuffer = Buffer.from(buf)
-	if(refinedOffset > 31 || refinedOffset + bits > 31) {
-		return undefined
-	}
-
-	try{
-		let interim = dbuffer.readUInt8(0)
-		if(bits > 32) { interim = dbuffer.toString(16)} else
-		if(bits > 0) {
-			switch (bits) {
-				case 8:
-					switch (buf.length) {
-						case 1:
-							interim = dbuffer.readUInt8(0)
-							break;
-						case 2:
-							/// overlapped 2 bytes although bits < 8
-							interim = dbuffer.readUInt16BE(0)
-						default:
-							throw new Error('')
-						break;
-					}
-				break;
-	
-				case 16:
-					switch (buf.length) {
-						case 2:
-							interim = dbuffer.readUInt16BE(0)
-						break;
-						case 4:
-							/// overlapped 2 bytes although bits < 8
-							interim = dbuffer.readUInt32BE(0)
-						default:
-							throw new Error('')
-						break;
-					}
-				break;
-	
-				case 32:
-					interim = dbuffer.readUInt32BE(0)
-				break;
-	
-				default:
-					return dbuffer.toString('hex')//particle.quality = 0x8000ffff
-				break;
-			}
-		} else {interim = null}
-
-		/// bitmask
-		let mask = 0x0
-		for (let i = refinedOffset; i < refinedOffset + bits; i += 1) {
-			mask |= (0x1 << i)///only valid for 32bits number in Javascript...
-		}
-		let result = (interim & mask)
-		return result
-
-	} catch(error){
-		throw new Error('PARSE SIGNAL E')
-	}
-	return null;
+module.exports = {
+	gothrough: gothrough
 }
 
-// revised logic
-
 /*
-	model
-		cyclicdata
-		layoutdata
-		elementdata
-			signals[array]
-				events[dictionary: offset_bits_value, menu string]
-			elements[array]
+	model:  there had been 10 times longer code than this page,
+	but this page is the proper one which servers
+	that purpose and minimalized the effort!
+
+	the effort of reading i mean but not writing
+	along with the continuous writing action
+	some clues got clearer and clearer
+
+	some code reduced and reduced but works still
+	some redundandency removed and get better understood
+
+	some uncessary information aborted
+	most revealing part is the data structure i used to describe the layout
+	have settled and changed a lot, finally they become this.
+
+	there seems 2 layer explainer for decode a page
+	- 1st layer mixed with known type and unknown type which called format
+	- 2nd layer are known types each
+
+	format is a group of known types like double, int, string and bits
+
+	bits actually can be interpreted into a number like 0, 1, 1024, ...
+
+	bits and int/long sometime servers as signal which means they convey some meaning after decoded into number
+
+	looks like a enum lookup table, so a key is the decoded number while its value is the enum result like singal meaning
+
+	i am keeping those records until i delete them some day
 
 */
 
-	// target is: make them readable String with Context
-	// measure(PQSinputoutput[kWh/C]) = 3909093.5678773 
-	// status(tripconditionsonoffalarm) = 0x2490
-	// event('overload trip short circuits both detected') = 2021.03.24T21:38:56:277Z 
-
-	// so there is only one table which was condensed with rules like measures, statuss, events, etc.,
-function crossCompile(rawdataObj, modelElementObj, settleCallback) {
-
-	let buffer = Buffer.from(rawdataObj.response._body._valuesAsBuffer)
-	let timestampAsObject = rawdataObj.metrics.receivedAt
-	log.fatal(`[${buffer.length}]: [buffer length], timestamp receivedAt ${timestampAsObject}`);
-
-	// remote measure
-	if(modelElementObj.measure !== undefined) {
-
-		for (let i = 0; i < modelElementObj.measure.length; i += 1) {			
-			const _node = modelElementObj.measure[i]
-			let _offset = _node.offset
-			let _bits = _node.bits
-			let _byteStart = parseInt(_offset / 8) // only integer part
-			let _byteEndNext = /**/parseInt((_offset + _bits) / 8)  // + 1 next position to end
-
-			if(_offset % 8 !== 0) {}
-			if((_offset + _bits) % 8 != 0) {
-				log.info('aligning... ', (_offset + _bits), Math.ceil((_offset + _bits) / 8) + 1);
-				_byteEndNext = Math.ceil((_offset + _bits) / 8) + 1
-			}
-
-			let focused = buffer.slice(_byteStart, _byteEndNext)
-			let clone = Buffer.from(focused)
-
-			// log.warn(`[${clone.toString('hex')}]: [${clone.length}]`);
-			_node.value = measure(clone, _node.format);
-			if(_node.value !== null && _node.value !== undefined) {
-				log.warn('_offset: ', _offset, _bits, _byteStart, _byteEndNext, '-> ', clone, _node.value);
-
-				settleCallback(`measure(${_node.menu}) [${_node.unit}]`, _node.value);
-			}
-		}
-	}
-
-	// status as signal
-	// let signalDictionary = new Map()
-	if(modelElementObj.signal !== undefined) {
-		///events process after signal decoding
-		let enumEventsDictionary = modelElementObj.signal.events;
-
-		for (let i = 0; i < modelElementObj.signal.length; i += 1) {
-			const _node = modelElementObj.signal[i]
-			let _offset = _node.offset
-			let _bits = _node.bits
-			/// force _offset 32-bit aligned this time!
-			let _32_bit_aligned_offset = parseInt(_offset - parseInt(_offset / 32) * 32)
-			let _32_bit_aligned_start = Math.ceil((_32_bit_aligned_offset) / 8)
-			let _32_bit_aligned_stop = Math.ceil((_32_bit_aligned_offset + bits) / 8)
-			let _byteOccupancy = _32_bit_aligned_start - _32_bit_aligned_stop + 1///enigma
-			let byteTotal = 0
-			switch (_byteOccupancy) {
-				case 1:
-				case 2:
-					byteTotal = _byteOccupancy;
-				break;
-				
-				case 3:
-					byteTotal = _byteOccupancy + 1;
-				break;
-				
-				case 4:
-					byteTotal = _byteOccupancy;
-				break;
-
-				default:
-					throw new Error(`Should not process SIGNAL longer than 32 bit! byteTotal= ${byteTotal}`);
-				// break;
-			}
-
-			let _realStart = Math.ceil((_offset) / 8)
-			if(_realStart + byteTotal <= buffer.length) {
-				let focused = buffer.slice(_realStart, _realStart + byteTotal + 0)
-				let clone = Buffer.from(focused)
-				log.warn(`[${clone.toString('hex')} length's ${clone.length}(must be 1,2,4, and broken Error)]: when decoding signals`);
-				_node.value = signal(clone, _32_bit_aligned_start, _bits);
-				
-
-				// enums based Event
-				let keyString = _offset + '_' + _bits + '_' + _node.value
-				let enumStringFound = enumEventsDictionary.get(keyString)
-				if(enumStringFound) {
-					settleCallback(`event(${enumStringFound})`, timestampAsObject)
-					log.debug(`${keyString}: ${enumStringFound}, ${timestampAsObject};`)
-				}
-				///events enum
-
-
-				if(_node.value !== null && _node.value !== undefined) {
-					console.log('_offset: ', _offset, _bits, _byteStart, _byteEndNext, '-> ', clone, _node.value);
-					// signalDictionary.set( _offset + '_' + _bits + '_' + _node.value, new Date());
-					settleCallback(`status(${_node.menu})`, _node.value);
-				}
-			}
-		}
-
-	}
-	return;
-}
-
-module.exports = {
-	buildDictionaryFromArray: buildDictionaryFromArray,
-	crossCompile: crossCompile,
-}
+// target is: make them readable String with Context
+// measure(PQSinputoutput[kWh/C]) = 3909093.5678773
+// status(tripconditionsonoffalarm) = 0x2490
+// event('overload trip short circuits both detected') = 2021.03.24T21:38:56:277Z
+// so there is only one table which was condensed with rules like measures, statuss, events, etc.,
+/*
+	Here support as long as 'LONG' at present, 64bit, 8 bytes, 16 hex digits like '6d 3f 2e 7b f0'
+	subInteger means from bit offset to bit length value
+	for example, bit offset = 0 and big length =32 means whole INT data type
+							 bit offset = [0::31] and bit length = 1 means one single bit position
+							 one bit value can be translated into boolean like true or false(syntax with semantic)
+			  
+				datapoint.buffer = Buffer.from(rawdataObj.buffer);
+				datapoint.start = (realStart) * / *sizeof(int) / * / 2;
+				datapoint.counts = segment.registers * / * sizeof(int) / * / 2;
+				datapoint.qualityCode = "0";
+				datapoint.value = Number.MIN_VALUE;//NaN;
+				datapoint.typeIndicator = "STRING";
+ 
+				-->>
+				datapoint.bitstart = 0..31;
+				datapoint.bitcounts = 1..32;
+  
+	***
+	to flexibly handle any cases in work, after consideration I adopted the own way of parse INT/LONG
+	that is 'shift' and 'add'
+	not the original designed Buffer function (readInt32BE...) BE guess mean Big Endian
+  
+	now this way I can read 1 word INT from some strange device like Siemens SoftStarter
+ 
+	at first this piece code cannot process the 2 butes INT and the above readInt32BE gave exception
+	after check the tracer message on screen I found this issue was caused by Buffer's function
+	so when facing bytesArray = [0x01, 0xea], this could be viewed as byte array of word
+	I simply move the BE to left: please remember the left most byte owns highest order
+	intValue = 0x01 << 0x8 : move the most significant byte to left, that is to implement the BE means
+	intValue = 0x01 << 0x8 + 0xea: get the full length value 
+ 
+	actually thus this piece of new code could handle any bytes array until 8 - 64bits LONG for most computer
+ 
+*/

@@ -51,19 +51,41 @@ function prepareModel(rootdir) {
 	return a
 }
 
-function load() {
+function displayProperties(jsonObj) {
+	for (var val in jsonObj) {
+		log.debug(val + ": " + jsonObj[val])
+	}
+	return;
+}
+function displayMap() {
+	let array = []
+	for (var x of mapObj) {
+		var jsonObj = {}
+		log.debug(x[0] + '=' + x[1])
+		jsonObj[x[0]] = x[1]
+		array.push(jsonObj)
+	}
+	let jsonString = JSON.stringify(jsonArray)
+	console.log(jsonString)
 
 }
-function save() {
-
+function troubleshootModel() {
+	let mapObj = prepareModel(__dirname)
+	const list = []
+	for (var val in mapObj) {
+		list.push({
+			'key': val[0],
+			'val': val[1]
+		})
+	}
+	return list
 }
-
 /*
 	there are two kinds of space->>
 	named or structed:
 		We have worked on that one like 3WL 3VA2, 7SJ686 etc.,
 */
-function search(modelName) {
+function lookup(modelName) {
 	let knownModels = new Map()
 	knownModels = prepareModel(__dirname)
 	if (knownModels.get(modelName.toUpperCase())) {
@@ -160,5 +182,5 @@ function bootstrap() {
 module.exports = {
 	bootstrap,
 	serialize,
-	search,
+	lookup,
 }
