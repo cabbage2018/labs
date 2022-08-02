@@ -18,9 +18,7 @@ let net = require('net')
 						"variableType": 7,
 					}
 */
-
 async function acquire(ip, port, sub, fc, register, count, timeout, outputs) {
-
 	if (typeof (ip) !== 'string') {
 		throw new Error('Wrong IP')
 	}
@@ -43,7 +41,7 @@ async function acquire(ip, port, sub, fc, register, count, timeout, outputs) {
 		throw new Error(`cannot access ${count} registers at one time! the maximum you can do is 127`)
 	}
 	if (typeof (outputs) != 'object' || count < 0) {
-		throw new Error('Wrong outputs count')
+		throw new Error('Wrong outputs flash')
 	}
 	const ms = (timeout > 60000 || timeout < 0) ? 3000 : timeout
 	let entry = {

@@ -2,10 +2,6 @@ var express = require('express');
 var router = express.Router();
 let path = require('path')
 let fs = require('fs')
-
-// use markdown-it to convert content to HTML
-var md = require("markdown-it")();
-
 /* GET home page. */
 router.get('/', function (req, res, next) {
 	res.write('<p><a href="./blog">My blog</a></p>')
@@ -117,5 +113,12 @@ router.get("/modbus", async (req, res, next) => {
 	SNAP7 FUNCTIONS
 */
 
-module.exports = router
+module.exports = {
+	acqunit: {
+		physicalSpace: '',
+		protocol: '',
+		layout: '',
+		assetTag: ''
+	}
+}
 module.exports.dataCrawl = dataCrawl
